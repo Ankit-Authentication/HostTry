@@ -1,25 +1,59 @@
-import logo from './logo.svg';
+import React , {Fragment , useState} from 'react';
+import Navbar from "./components/Navbar";
 import './App.css';
+import Sidebar from "./components/Sidebar";
+import Routes from "./components/Routes";
+import Particles from "react-particles-js"
+const App = () => {
+  const [icon,setIcon]= useState("fa fa-align-justify")
+  const onclick=()=>{
+    if(icon==="fa fa-align-justify"){
+ document.getElementById("sidebar-wrapper").style.display="block";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ setIcon("fa fa-chevron-left")
 }
+else{
+  document.getElementById("sidebar-wrapper").style.display="none";
+
+ setIcon("fa fa-align-justify")
+}
+  }
+  const click=()=>{
+ 
+    document.getElementById("sidebar-wrapper").style.display="none";
+  
+   setIcon("fa fa-align-justify")
+  
+    }
+  return(
+    <Fragment>
+      <Particles
+     params={{
+	    "particles": {
+	        "number": {
+	            "value": 75
+          },
+          "color":{
+            "value":"#fff"
+          },
+          "line_linked":{
+            "color":"#fff"
+          },
+	        "size": {
+	            "value": 5
+	        }
+	    },
+	   
+  }} 
+  height="100vh"
+  className="canvas"
+      />
+      <Navbar onclick={onclick} icon={icon}/>
+      <div className="flex">
+        <Sidebar onclick={click}/>
+    <Routes style={{padding:"30px",width:"100%"}}/>
+    </div>
+     </Fragment>
+)}
 
 export default App;
