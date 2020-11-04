@@ -25,7 +25,7 @@ ul{
     display:none;
 }
 .icon{
-    color:#000;
+    color:#fff;
     margin-right:auto;
     font-size:x-large;
     cursor: pointer;
@@ -33,7 +33,7 @@ ul{
     display: none;
 }
 .icon1{
-    columns: #d3d3d3;;
+    columns: #fff;;
     margin-right:auto;
     font-size:15px;
     cursor: pointer;

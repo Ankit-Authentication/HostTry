@@ -11,7 +11,7 @@ const Navbar = props => {
         // anchor element's props
         return {
           style: {
-            color: isCurrent ? "blue" : "black"
+            color: isCurrent ? "blue" : "#fff"
           }
         };
       }}
