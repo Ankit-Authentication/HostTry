@@ -25,11 +25,12 @@ const Sidebar = props => {
 
 <div id="sidebar-wrapper">
     <div className="list-group list-group-flush">
-    <NavLink to="/personal" className="list-group-item "  onClick={props.onclick}>Personal Details</NavLink>
-    <NavLink to="/academic" className="list-group-item " onClick={props.onclick}>Academic Qualification</NavLink>
-    <NavLink to="/technical" className="list-group-item " onClick={props.onclick}>Technical Qallification</NavLink>
-    <NavLink to="/project" className="list-group-item " onClick={props.onclick}>Projects</NavLink>
-    <NavLink to="/awards" className="list-group-item " onClick={props.onclick}>Awards And Honour</NavLink>
+    <NavLink to="/home" className="list-group-item "  onClick={props.onclick}>Home</NavLink>
+    <NavLink to="/academic" className="list-group-item "  onClick={props.onclick}>Schedule</NavLink>
+    <NavLink to="/technical" className="list-group-item "  onClick={props.onclick}>Register</NavLink>
+    <NavLink to="/project" className="list-group-item "  onClick={props.onclick}>Problem Statements</NavLink>
+    <NavLink to="/faq" className="list-group-item "  onClick={props.onclick}>FAQ</NavLink>
+    <NavLink to="/awards" className="list-group-item "  onClick={props.onclick}>Awards And Honour</NavLink>
 
   </div>
 

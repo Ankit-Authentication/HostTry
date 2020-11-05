@@ -1,6 +1,6 @@
 body{
   /* background:  linear-gradient(to right ,   #1e5799 0%, #3ccdbb 0% , #16c9f6 100%); */
-  background-color: rgb(34, 3, 68);
+  background-color:  #000033;
   margin: 0px;
 }
 a:hover{
@@ -21,7 +21,7 @@ a:hover{
    
  .flex{
    display: block;
-   padding: 20px;
+   /* padding: 20px; */
    width: 100%;
  }
 } 

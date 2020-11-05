@@ -1,0 +1,42 @@
+
+
+.container{
+    width:100%;
+    max-width: 80%;
+    margin:0 auto;
+    padding:0 1.5rem;
+}
+
+.accordion-item{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+.collapsible {
+    cursor: pointer;
+    background-color: #283042;
+    border-radius: .4rem;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    color: #f1f1f1;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .content p{
+      font-size: 20px;
+  }

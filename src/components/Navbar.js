@@ -26,10 +26,11 @@ const Navbar = props => {
 
   <i className={props.icon} id="icon" onClick={props.onclick}></i>
 
-  <NavLink to="/personal" className="icon1">Home</NavLink>
+  <NavLink to="/home" className="icon1">Home</NavLink>
     <NavLink to="/academic" className="icon1">Schedule</NavLink>
     <NavLink to="/technical" className="icon1">Register</NavLink>
     <NavLink to="/project" className="icon1">Problem Statements</NavLink>
+    <NavLink to="/faq" className="icon1">FAQ</NavLink>
     <NavLink to="/awards" className="icon1">Awards And Honour</NavLink>
   <a href="https://www.instagram.com/arihantjain812000?r=nametag" className="icon"><i className= "fa fa-instagram" style={{marginLeft:"50px"}} ></i></a>
   <a href="https://www.facebook.com/profile.php?id=100021723864058" className="icon"><i className="fa fa-facebook-square " ></i></a>

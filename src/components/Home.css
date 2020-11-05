@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+  .flexitem{
+      display:flex;
+      flex-direction: row;
+      text-align: center;
+      margin: auto;
+  }
+  .flexitem div{
+      flex:50%
+  }
+  .data{
+    color:#f1c40f;
+    font-size:90px;
+    font-weight:900;
+    font-family: "ui-rounded";
+  }
+  .image{
+    height:500px;
+  
+  }
+  .imagedir{
+    width:30%;
+    margin: 30px;
+    border:5px ;
+    border-radius: 25px;
+  }
+  .regbtn{
+    color:#ccccff;
+    /* background-color: rgb(228, 74, 47); */
+    background: transparent;
+    border-radius: 25px;
+width:25%;
+    font-size: 30px;
+    
+    border:5px inset #f1c40f;
+    cursor: pointer;
+  }
+  .regbtn:hover{
+ 
+width:27%;
+    
+    color:#ccccff;
+    background-color: #576574;
+    border-radius: 25px;
+
+    font-size: 30px;
+    border:5px inset #576574;
+    cursor: pointer;
+  }
+
+  p{
+    text-align: center;
+    font-size: x-large;
+    padding:10px;
+    font-family: cursive;
+  }
+  @media (max-width: 800px) {
+   
+    .flexitem{
+      display: block;
+      padding: 20px;
+      width: 100%;
+    }
+    .data{
+      color:#f1c40f;
+      font-size:60px;
+      font-weight:800;
+      font-family: "ui-rounded";
+    }
+   } 
