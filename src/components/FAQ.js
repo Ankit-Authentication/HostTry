@@ -13,7 +13,8 @@ const FAQ=()=>{
    
    
 return(<Fragment>
- 
+ <img src="/images/FAQ.png" className="image"></img>
+
 <div className="container">
         <div className="accordion">
           <div className="accordion-item" id="question1">

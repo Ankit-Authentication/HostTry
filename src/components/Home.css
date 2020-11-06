@@ -20,10 +20,11 @@
   
   }
   .imagedir{
-    width:30%;
-    margin: 30px;
+    width:23%;
+    margin: 40px;
+    padding-left: 30px;
     border:5px ;
-    border-radius: 25px;
+    /* border-radius: 25px 25px 25px 25px; */
   }
   .regbtn{
     color:#ccccff;
@@ -55,6 +56,23 @@ width:27%;
     padding:10px;
     font-family: cursive;
   }
+  .msg  {
+    
+    font-family: cursive;
+    padding-left:6rem;
+    
+        
+}
+
+.info{
+  padding: 30px 50px 30px 30px;
+}
+ .info h4 , h3 {
+  font-size: 18px;
+  line-height: 1.5rem;
+  text-align: left;
+  
+}
   @media (max-width: 800px) {
    
     .flexitem{

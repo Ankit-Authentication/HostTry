@@ -1,5 +1,11 @@
 
-
+.image{
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .container{
     width:100%;
     max-width: 80%;

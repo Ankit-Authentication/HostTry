@@ -43,15 +43,23 @@ return(<Fragment>
 <p>It doesn't matter if someone is still making their first app or their 100th one. There are a lot of things to learn. The only constraint is time.</p>
 </div>
 <img src="/images/seperation.png" width="100%" height="15%"></img>
-<div className="flexitem" >
+<div className="flexitem" id="message" >
 
    <img src="/images/dir.jpg" className="imagedir" data-aos="fade-left"></img>
-    <div style={{color:"white",marginTop:"50px",borderLeft:"5px solid red"}} data-aos="fade-down">
-      <h1>From the Desk of Director</h1>
-      <h4>"I am confident that the participants will find PU Digital Hackathon 2020 a very valuable experience. I wish the Hackathon great success. I hope you have a good time and opportunity to connect with experts from the scientific community and influential entrepreneurs from industries."</h4>
-      <h4>- Dr. Aman Aggarwal(GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT)</h4>
+   <div className="msg">
+    <div style={{color:"white",marginTop:"50px",borderLeft:"2px solid red"}}data-aos="fade-down">
+     
+      <h1 className="data" style={{fontSize:"40px"}}>From the Desk of Director </h1>
+      <div className= "info" >
+      <h3>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. I wish the Hackathon great success. I hope you have a good time and opportunity to connect with experts from the scientific community and influential entrepreneurs from industries."</h3>
+      <h4 style={{textAlign:"center"}}>- Dr. Aman Aggarwal<br/></h4>
+      <h3 style={{textAlign:"center"}}>(GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT)</h3>
+      </div>
+      </div>
     </div>
+
 </div>
+
 </Fragment>)
 }
 export default Home
