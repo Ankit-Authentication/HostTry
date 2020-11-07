@@ -32,12 +32,7 @@ const Navbar = props => {
     <NavLink to="/project" className="icon1">Problem Statements</NavLink>
     <NavLink to="/faq" className="icon1">FAQ</NavLink>
     <NavLink to="/awards" className="icon1">Awards And Honour</NavLink>
-  <a href="https://www.instagram.com/arihantjain812000?r=nametag" className="icon"><i className= "fa fa-instagram" style={{marginLeft:"50px"}} ></i></a>
-  <a href="https://www.facebook.com/profile.php?id=100021723864058" className="icon"><i className="fa fa-facebook-square " ></i></a>
-  <a href="mailto" className="icon"><i className="fa fa-envelope" ></i></a>
-  <a href="https://www.linkedin.com/in/arihant-jain-8642881a6" className="icon"><i className= "fa fa-linkedin "></i></a>
-  <a href="http://www.google.com" className="icon"><i className="fa fa-whatsapp " ></i></a>
-  <a href="https://github.com/arihant812000" className="icon"><i className="fa fa-github" ></i></a>
+  
       {/* </div> */}
   </nav>
 

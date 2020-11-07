@@ -57,13 +57,13 @@ return(<Fragment>
           width:"50%",
           bgColor: "#000033",
           rowTitleColor: "white",
-          rowTitleTextSize: '30px',
+          // rowTitleTextSize: '20px',
           rowContentColor: "#f1c40f",
-          rowContentTextSize: '25px',
+          // rowContentTextSize: '15px',
           rowContentPaddingTop: '10px',
           rowContentPaddingBottom: '30px',
           rowContentPaddingLeft: '50px',
-          rowContentPaddingRight: '150px',
+          rowTitlePaddingLeft: '50px',
           arrowColor: "white",
           background:"transparent"
           }} 
