@@ -25,11 +25,10 @@ ul{
     display:none;
 }
 .icon{
-    color:#fff;
+    height:100%;
+    widht:100%;
     margin-right:auto;
-    font-size:x-large;
-    cursor: pointer;
-    opacity: 1;
+    
     display: none;
 }
 .icon1{
