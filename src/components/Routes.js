@@ -1,11 +1,11 @@
 import React from "react";
 import { Router } from "@reach/router";
 import Home from "./Home";
-import FAQ from "./FAQ";
+import Faqs from "./Faq";
 const Routes= props =>{
 return(<Router style={props.style}>
-    <Home path="home"/>
-    <FAQ path="faq"/>
+    <Home path="/"/>
+    <Faqs path="faq"/>
 </Router>)
 }
 export default Routes

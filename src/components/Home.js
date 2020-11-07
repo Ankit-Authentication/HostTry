@@ -12,7 +12,9 @@ const Home=()=>{
       }, []);
       
    
-   
+   const click=()=>{
+    window.location.href="https://www.gangainstitute.com/"
+   }
 return(<Fragment>
   <div className="flexitem" >
     <div style={{color:"white",marginTop:"30px"}} data-aos="fade-down">
@@ -57,6 +59,38 @@ return(<Fragment>
       </div>
       </div>
     </div>
+
+</div>
+{/* <img src="/images/seperation.png" width="100%" height="15%" style={{height:"10%"}}></img> */}
+<div style={{textAlign:"center",color:"white",width:"100%",wordWrap:"break-word"}}>
+<h1 style={{color:"#f1c40f"}}>ORGANISED BY</h1>
+  <div className="flexitem">
+
+      
+   
+      <div className= "info">
+      <h2>APPTECHTELL</h2>
+      <h3 style={{textAlign:"center"}}>IT CLUB @ GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h3>
+
+      </div>
+  <div><img src="/images/apptechtell.png" data-aos="fade-left" width="30%" style={{borderRadius:"25px"}}></img></div>
+ 
+</div>
+
+  <h1 style={{color:"#f1c40f"}}>SPONSORED BY</h1>
+  <div className="flexitem" style={{textAlign:"center",color:"white",width:"100%",wordWrap:"break-word"}}>
+
+       <div ><img src="/images/gitam-logo.png" data-aos="fade-left" height="50%" onClick={click}></img></div>
+      <div className= "info">
+      <h2>GANGA INSTITUTE OF  TECHNOLOGY AND MANAGEMENT</h2>
+      <h3 style={{textAlign:"center"}}>Approved by AICTE, New Delhi & Affiliated to Maharshi Dayanand University,Rohtak and HSBTE, Panchkula</h3>
+
+<h3 style={{textAlign:"center"}}>Recognized under Section 2(f) of UGC Act , 1956</h3>
+      </div>
+  
+  
+ 
+</div>
 
 </div>
 

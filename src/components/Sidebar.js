@@ -12,7 +12,7 @@ const Sidebar = props => {
         // anchor element's props
         return {
           style: {
-            color: isCurrent ? "blue" : "black"
+            color: isCurrent ? "blue" : "#fff"
           }
         };
       }}
@@ -25,7 +25,7 @@ const Sidebar = props => {
 
 <div id="sidebar-wrapper">
     <div className="list-group list-group-flush">
-    <NavLink to="/home" className="list-group-item "  onClick={props.onclick}>Home</NavLink>
+    <NavLink to="/" className="list-group-item "  onClick={props.onclick}>Home</NavLink>
     <NavLink to="/academic" className="list-group-item "  onClick={props.onclick}>Schedule</NavLink>
     <NavLink to="/technical" className="list-group-item "  onClick={props.onclick}>Register</NavLink>
     <NavLink to="/project" className="list-group-item "  onClick={props.onclick}>Problem Statements</NavLink>

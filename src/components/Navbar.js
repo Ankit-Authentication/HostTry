@@ -26,7 +26,7 @@ const Navbar = props => {
 
   <i className={props.icon} id="icon" onClick={props.onclick}></i>
 
-  <NavLink to="/home" className="icon1">Home</NavLink>
+  <NavLink to="/" className="icon1">Home</NavLink>
     <NavLink to="/academic" className="icon1">Schedule</NavLink>
     <NavLink to="/technical" className="icon1">Register</NavLink>
     <NavLink to="/project" className="icon1">Problem Statements</NavLink>

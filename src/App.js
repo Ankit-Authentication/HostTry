@@ -9,12 +9,12 @@ const App = () => {
   const onclick=()=>{
     if(icon==="fa fa-align-justify"){
  document.getElementById("sidebar-wrapper").style.display="block";
-
+ 
  setIcon("fa fa-chevron-left")
 }
 else{
   document.getElementById("sidebar-wrapper").style.display="none";
-
+ 
  setIcon("fa fa-align-justify")
 }
   }
