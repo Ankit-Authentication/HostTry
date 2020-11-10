@@ -2,6 +2,7 @@ import React ,{useEffect , Fragment}from "react";
 import  AOS from "aos";
 import Faq from 'react-faq-component';
 import "aos/dist/aos.css";
+import { Container,Row,Col } from "react-bootstrap";
 import './FAQ.css'
 const Faqs=()=>{
     useEffect(() => {
@@ -51,8 +52,15 @@ const Faqs=()=>{
       }
     
 return(<Fragment>
- <img src="/images/FAQ.png" className="image"></img>
- <div style={{width:"80%",marginLeft:"10%"}}><Faq data={data}
+  <Container>
+  <Row style={{width:"100%"}} >
+  
+    <Col lg={12} md={12} sm={12}><img src="/images/FAQ.png" className="image" style={{height:"50%",display:"block"}}></img></Col>
+  </Row>
+  </Container>
+ 
+ <div style={{width:"80%",marginLeft:"10%",marginTop:"-500px",marginBottom:"100px"}}>
+   <Faq data={data}
         styles={{
           width:"50%",
           bgColor: "#000033",
@@ -63,7 +71,6 @@ return(<Fragment>
           rowContentPaddingTop: '10px',
           rowContentPaddingBottom: '30px',
           rowContentPaddingLeft: '50px',
-          rowTitlePaddingLeft: '50px',
           arrowColor: "white",
           background:"transparent"
           }} 

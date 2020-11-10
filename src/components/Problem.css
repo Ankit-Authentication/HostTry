@@ -1,0 +1,25 @@
+
+   th {
+       border-bottom: solid 3px red;
+    background-color: aliceblue;
+    color: black;
+    text-align:center;
+    padding:10px;
+    font-weight: bold;
+ }
+ td{
+    padding: 10px;
+    border: solid 1px gray;
+    background: papayawhip;
+    text-align: center
+  }
+  @media (max-width: 1000px){
+   th{
+       
+       font-size: 10px;
+      
+   } 
+   td{
+font-size: 10px;
+   }
+}
