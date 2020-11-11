@@ -5,6 +5,7 @@ import Faqs from "./Faq";
 import Schedule from "./Schedule";
 import ProblemStatements from "./Exceltry"
 import Team from "./Team"
+import ErrorPage from "./ErrorPage";
 const Routes= props =>{
 return(<Router style={props.style}>
     <Home path="/"/>
@@ -12,6 +13,7 @@ return(<Router style={props.style}>
     <ProblemStatements path="problemStatement"/>
     <Schedule path="schedule"/>
     <Team path="team"/>
+    <ErrorPage path="*"/>
 </Router>)
 }
 export default Routes
