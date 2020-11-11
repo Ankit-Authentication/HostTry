@@ -23,6 +23,7 @@ const Schedule=()=>{
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       date="2010 - 2011"
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
      
