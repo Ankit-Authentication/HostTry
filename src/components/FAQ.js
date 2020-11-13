@@ -55,7 +55,7 @@ return(<Fragment>
   <Container>
   <Row style={{width:"100%"}} >
   
-    <Col lg={12} md={12} sm={12}><img src="/images/FAQ.png" className="image"></img></Col>
+    <Col lg={12} md={12} sm={12}><img src="/images/FAQ.png" className="image" style={{display:"block",margin:"auto"}}></img></Col>
   </Row>
   </Container>
  

@@ -87,8 +87,8 @@ const TableCell = ({ value }) => (
     
       return (
         <Fragment>
-          <h1> PROBLEM STATEMENTS</h1>
-          <Form>
+          <h1 className="h1"> PROBLEM STATEMENTS</h1>
+          <Form className="form">
           <Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Control as="select">
       <option>ALL</option>
