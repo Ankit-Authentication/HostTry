@@ -4,6 +4,7 @@ import Home from "./Home";
 import Faqs from "./FAQ";
 import Schedule from "./Schedule";
 import ProblemStatements from "./Exceltry"
+import Team from "./Team"
 import ErrorPage from "./ErrorPage";
 import Register from "./Register";
 const Routes= props =>{

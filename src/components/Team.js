@@ -9,11 +9,7 @@ const Team=()=>{
         {
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
-<<<<<<< HEAD
-            image :"image1.png"
-=======
             image:"robot.png"
->>>>>>> bdf67d1ad79b8261a05b4ba0d5fb3f83090d260e
         },
         {
             name:"Ankit GUPTA",
