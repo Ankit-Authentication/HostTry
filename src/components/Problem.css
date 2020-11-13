@@ -48,6 +48,7 @@ flex-direction: column;
 display: block;
 width: 90%;
 padding-top: 20px; 
+margin-left: -10px;
   }
 
   .modal {
