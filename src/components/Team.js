@@ -9,27 +9,36 @@ const Team=()=>{
         {
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
+<<<<<<< HEAD
             image :"image1.png"
+=======
+            image:"robot.png"
+>>>>>>> bdf67d1ad79b8261a05b4ba0d5fb3f83090d260e
         },
         {
             name:"Ankit GUPTA",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"DEEPANSHI JAIN",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"NEETU SHARMA",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"MAHESH MALKHANI",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"ARIHANT JAIN",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         }
     ]
 

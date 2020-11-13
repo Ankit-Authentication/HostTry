@@ -1,9 +1,9 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-
+import './Footer.css'
 const Footer = () => {
   return (
-    <MDBFooter color="blue" className="font-small pt-4 mt-4" style={{color:"#fff",bottom:"0px"}}>
+    <MDBFooter color="blue" className="font-small pt-4 mt-4 foot" >
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="4" style={{color:"#fff", textAlign:"center"}}>
@@ -14,14 +14,14 @@ const Footer = () => {
             </p>
           </MDBCol>
           <MDBCol md="4" style={{color:"#fff" , textAlign:"center",marginTop:"50px"}}>
-              <h5>ABOUT US</h5>
+              <h5 style={{color:"black"}}>ABOUT US</h5>
           <p>With a mission to improve lives through learning, connecting people and ideas, and to create skilled software engineers for our country and the world, Code Warriors aims to connect learners from all over the globe with high-quality educators.</p>
           </MDBCol>
           <MDBCol md="4" style={{color:"#fff", textAlign:"center",marginTop:"50px"}}>
-            <h5 className="title">GET IN TOUCH WITH US</h5>
+            <h5 className="title" style={{color:"black"}}>GET IN TOUCH WITH US</h5>
            <p><i class="fa fa-whatsapp" aria-hidden="true"></i> 9518407256 &emsp;<i class="fa fa-whatsapp" aria-hidden="true"></i> 8447771951&emsp;<i class="fa fa-whatsapp" aria-hidden="true"></i> 8168095773</p>
            <p><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; apptechtell@gmail.com</p><br/>
-           <hr style={{backgroundColor:"#fff",width:"100px"}}/>
+           <hr style={{backgroundColor:"black",width:"100px"}}/>
            <p><i class="fa fa-facebook" aria-hidden="true"></i> &emsp;<i class="fa fa-instagram" aria-hidden="true"></i> &emsp;<i class="fa fa-twitter" aria-hidden="true"></i>&emsp;<i class="fa fa-youtube-play" aria-hidden="true"></i> &emsp;<i class="fa fa-linkedin" aria-hidden="true"></i>  </p>
           </MDBCol>
         </MDBRow>

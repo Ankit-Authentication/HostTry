@@ -32,6 +32,7 @@ const App = () => {
       <Navbars />
 
     <Routes style={{width:"100%"}}/>
+    
    <Footer/>
      </Fragment>
 )}
