@@ -6,27 +6,33 @@ const Team=()=>{
     const info=[
         {
             name:"ARIHANT JAIN",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"robot.png"
         },
         {
             name:"Ankit GUPTA",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"DEEPANSHI JAIN",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"NEETU SHARMA",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"MAHESH MALKHANI",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         },
         {
             name:"ARIHANT JAIN",
-            title: "SOFTWARE DEVELOPER"
+            title: "SOFTWARE DEVELOPER",
+            image:"apptechtell.png"
         }
     ]
 
@@ -42,7 +48,7 @@ const Team=()=>{
                 <div className='Card'>
                   <div className='upper-container'>
                     <div className='image-container'>
-                      <img src="/images/apptechtell.png" className="img" alt='' height="100px" width="100px" />
+                      <img src={`/images/${item.image}`} className="img" alt='' height="100px" width="100px" />
                     </div>
                   </div>
                   <div className='lower-container'>
