@@ -8,7 +8,7 @@ const Team=()=>{
     const info=[
         {
             
-            name:"NEETU SHARMA",
+            name:"Dr.NEETU SHARMA",
             title: "SOFTWARE DEVELOPER",
             image:"apptechtell.png"
         },
@@ -22,12 +22,12 @@ const Team=()=>{
             
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
-            image:"/team/arihant.png"
+            image:"/team/aj.jpg"
         },
         {
            name:"DEEPANSHI JAIN",
              title: "SOFTWARE DEVELOPER",
-             image:"/team/deepanshi.png"
+             image:"/team/dj3.png"
         },
         {
               name:"ANKIT GUPTA",

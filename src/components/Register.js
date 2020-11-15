@@ -1,19 +1,23 @@
-import React ,{useState} from "react";
+import React ,{Fragment,useState} from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios"
 import { Form,Button ,Container,Row,Col} from "react-bootstrap";
 const Register=()=>{
 const [teamName, setTeamName]= useState()
 const[memNum,setMemNum]=useState()
+const [disable,setdisable]=useState(true)
+const [teamMember,setTeamMember]=useState()
+const [apiMessage,setApiMessage]=useState("")
 const team=[]
 const submitTeam=()=>{
-  console.log(team)
+  console.log(teamMember)
+  setdisable(true)
   axios({
     method: 'POST',
     url: "http://web-a-thon.test/src/api/addPart.php",
     headers: { 'content-type': 'application/json' },
-    data: team
-  }).then(data=>console.log(data))
+    data: teamMember
+  }).then(data=>setApiMessage(data.data))
 }
 const submit=(event)=>{
   event.preventDefault()
@@ -30,7 +34,12 @@ const submit=(event)=>{
     semister: event.target.sem.value
   })
   event.target.submit.disabled=true
- console.log (event)
+  if(team.length==memNum){
+    setdisable(false)
+    console.log(team)
+    setTeamMember(team)
+  }
+ console.log (team)
   
 }
 const handleteam=(e)=>{
@@ -46,8 +55,8 @@ const handleteam=(e)=>{
          
         console.log(memNum)
     }
-    
-return(
+    if(apiMessage===""){
+    return(
    
         
         <Container style={{color:"#fff"}}>
@@ -185,7 +194,7 @@ return(
         }
         return data
         })()}
-<Button variant="primary" onClick={submitTeam}>
+<Button variant="primary" onClick={submitTeam} disabled={disable}>
     SUBMIT TEAM
   </Button>
         </Container>
@@ -194,6 +203,34 @@ return(
 
         // <h1>hello</h1>
     
-)
+)  
+    }
+    else if(apiMessage=="team added successfully"){
+     return (<Fragment>
+       
+          <img src="/images/added.png"  style={{width:"30%",color:"white",display:"block",margin:"auto",padding:"30px"}}/>
+       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>Team Added Successfully</h1>
+     <h5 style={{color:"white",width:"100%",margin:"auto",textAlign:"center",padding:"20px"}}>we will contact you soon</h5>
+      
+        
+     
+   
+     </Fragment>)
+    }
+else{
+  return (
+    <Fragment>
+       
+          <img src="/images/robot.png"  style={{width:"30%",color:"white",display:"block",margin:"auto",padding:"30px"}}/>
+       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>some error occured please try again or contact us on our mail id</h1>
+    
+      
+        
+     
+   
+     </Fragment>
+
+    )
+}
 }
 export default Register

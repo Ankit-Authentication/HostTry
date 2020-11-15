@@ -67,24 +67,22 @@ width:50%;
 }
 
 .cliens {
-  padding: 12px 0;
+  padding: 25px 0;
   text-align: center;
-  
+ 
 }
 
 .cliens img {
-  max-width: 45%;
+  max-width: 85%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-  -webkit-filter: grayscale(100);
-  filter: grayscale(100);
 }
 
 .cliens img:hover {
   -webkit-filter: none;
   filter: none;
-  transform: scale(1.1);
+  transform: scale(1.8);
 }
 
 @media (max-width: 768px) {
