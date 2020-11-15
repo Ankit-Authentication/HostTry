@@ -8,7 +8,7 @@ const Team=()=>{
     const info=[
         {
             
-            name:"NEETU SHARMA",
+            name:"Dr.NEETU SHARMA",
             title: "SOFTWARE DEVELOPER",
             image:"apptechtell.png"
         },

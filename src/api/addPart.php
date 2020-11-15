@@ -8,13 +8,13 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "webathon";
+$flag=0;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 $index=$_POST[0];
 $team=$index['team'];
 
 $date=date("D M d, Y G:i");
-echo var_dump($date);
    $sql = "INSERT INTO teams ( name,time)
  VALUES ('".$team."','".$date."')";
  
@@ -39,11 +39,13 @@ foreach($_POST as $row){
 VALUES ('".$row['name']."','".$row['roll']."','".$row['phone']."','".$row['mail']."','".$row['university']."','".$row['college']."','".$row['course']."','".$row['semister']."',".$team_id.")";
     
     if ($conn->query($sql) === TRUE) {
-      echo "team added successfully";
+      $flag=1;
     } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
+      $flag=0;
     }
 }
-
+if($flag===1){
+   echo "team added successfully";
+}
 
 ?>
