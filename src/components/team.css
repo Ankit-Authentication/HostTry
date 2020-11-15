@@ -1,57 +1,58 @@
 .Card{
     width: 300px;
     height:400px;
-    background:white;
-    border-radius:10px;
+     background:white; 
+     border-radius:10px;
     box-shadow:0px 1px 10px 1px black;
-    overflow: hidden;
+    overflow: hidden; 
     margin-top :40px ;
   }
   
   .upper-container{
-    height: 100px;
- 
-    content:"With Love";
+    height: 140px;
+    background: linear-gradient(to left, #2d00f7, #ff0291);
   }
   
   .image-container img{
     background: white;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding: 5px;
-    transform: translate(50px,50px);
+    transform: translate(50px,25px);
   }
   
   .img{
     border: 3px solid #8e00b9;
   }
   
-  .lower-container{
+  .lower-info{
     margin-top: 60px;
     height: 300px;
     background: white;
     text-align:center;
   }
   
-  .lower-container h3,h4,p{
+  .lower-info h3,h4{
     margin-top:30px;
     padding:0;
   }
   
-  .lower-container h3{
+  .lower-info h3{
     color:#2f2d2e;
-    font-weight:00;
+    font-weight:700;
     font-size:1 rem;
+    margin-top: 90px;
+    letter-spacing: 1px;
   }
   
-  .lower-container h4{
+  .lower-info h4{
     color: #8e00b9;
     font-weight: 700;
     font-size: 22.5px;
   }
   
-  .lower-container p{
+  .lower-info p{
     margin: 1rem;
     color: #2f2d2e;
     font-size: 0.9rem;
@@ -60,7 +61,7 @@
   
   .button{
     margin:1rem;
-    margin-top:0;
+    margin-top:20PX;
     color:#2f2d2e;
     font: bold;
     background-color: white;
