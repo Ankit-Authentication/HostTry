@@ -13,7 +13,7 @@ const submitTeam=()=>{
     url: "http://web-a-thon.test/src/api/addPart.php",
     headers: { 'content-type': 'application/json' },
     data: team
-  }).then(data=>console.log(data))
+  }).then(data=>console.log(data.data))
 }
 const submit=(event)=>{
   event.preventDefault()
