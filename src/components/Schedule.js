@@ -11,12 +11,11 @@ const Schedule=()=>{
       className="vertical-timeline-element--work"
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-      
       iconStyle={{ background: 'white', color: '#fff' }}
      
     >
-      <h3 className="vertical-timeline-element-title">19-12-2020
-              09:00 AM - 10:00 AM</h3>
+      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h3>
+      <h4 className="vertical-timeline-element-title" style = {{textAlign:'left'}}</h4>
       <p>Opening Ceremony </p>
       
     </VerticalTimelineElement>
