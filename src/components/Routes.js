@@ -10,7 +10,7 @@ import Register from "./Register";
 const Routes= props =>{
 return(<Router style={props.style}>
     <Home path="/"/>
-    <Faqs path="FAQ"/>
+    <Faqs path="faq"/>
     <ProblemStatements path="problemStatement"/>
     <Schedule path="schedule"/>
     <Team path="team"/>
