@@ -22,17 +22,17 @@ const Team=()=>{
             
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
-            image:"arihant.png"
+            image:"/team/arihant.png"
         },
         {
            name:"DEEPANSHI JAIN",
              title: "SOFTWARE DEVELOPER",
-             image:"deepanshi.png"
+             image:"/team/deepanshi.png"
         },
         {
               name:"ANKIT GUPTA",
              title: "SOFTWARE DEVELOPER",
-             image:"Ankit.png"
+             image:"/team/Ankit.png"
         },
        
     ]
