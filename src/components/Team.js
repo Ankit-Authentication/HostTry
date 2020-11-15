@@ -10,13 +10,13 @@ const Team=()=>{
             
             name:"Dr.NEETU SHARMA",
             title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
+            image:"/team/neetumam.jpeg"
         },
         {
            
             name:"MAHESH MALKHANI",
             title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
+            image:"/team/maheshsir.jpg"
         },
         {
             
