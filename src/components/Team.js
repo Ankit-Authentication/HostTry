@@ -7,35 +7,34 @@ const Team=()=>{
     <h1>TEAMS CARDS  </h1>
     const info=[
         {
-            name:"ARIHANT JAIN",
-            title: "SOFTWARE DEVELOPER",
-            image:"robot.png"
-        },
-        {
-            name:"Ankit GUPTA",
-            title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        },
-        {
-            name:"DEEPANSHI JAIN",
-            title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        },
-        {
+            
             name:"NEETU SHARMA",
             title: "SOFTWARE DEVELOPER",
             image:"apptechtell.png"
         },
         {
+           
             name:"MAHESH MALKHANI",
             title: "SOFTWARE DEVELOPER",
             image:"apptechtell.png"
         },
         {
+            
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        }
+            image:"arihant.png"
+        },
+        {
+           name:"DEEPANSHI JAIN",
+             title: "SOFTWARE DEVELOPER",
+             image:"deepanshi.png"
+        },
+        {
+              name:"ANKIT GUPTA",
+             title: "SOFTWARE DEVELOPER",
+             image:"Ankit.png"
+        },
+       
     ]
 
   const[data,setData]=useState(info)
@@ -51,13 +50,12 @@ const Team=()=>{
                 <div className='Card'>
                   <div className='upper-container'>
                     <div className='image-container'>
-                    <img src={`/images/${item.image}`} className="img" alt='' height="100px" width="100px" />
+                    <img src={`/images/${item.image}` } className="img" alt='' height="100px" width="100px" />
                       </div>
                   </div>
-                  <div className='lower-container'>
+                  <div className='lower-info'>
                     <h3> { item.name } </h3>
                     <h4> { item.title } </h4>
-                    <p> about </p>
                     <button className="button">Visit Profile</button>
                   </div>
                 </div>
