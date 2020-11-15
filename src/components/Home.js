@@ -86,7 +86,7 @@ return(<Fragment>
     Approved by AICTE, New Delhi & Affiliated to Maharshi Dayanand University,Rohtak and HSBTE, Panchkula
     </Card.Text>
     <Card.Text>
-    Recognized under Section 2(f) of UGC Act , 1956
+    
     </Card.Text>
   </Card.Body>
   
@@ -95,7 +95,39 @@ return(<Fragment>
     
   </Row>
   
+  <section id="cliens" class="cliens section-bg">
+      <div class="container">
+          <h1 id = "logoheading">In Association With</h1>
+        <div class="row" data-aos="zoom-in">
 
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/webtek.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/iant.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/myweb.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/avinfosys.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/aptron_logo.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/hcllogo.png" class="img-fluid" alt=""/>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 </Container>
 
