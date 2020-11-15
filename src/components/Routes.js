@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import Home from "./Home";
-import Faqs from "./Faq";
+import Faqs from "./FAQ";
 import Schedule from "./Schedule";
 import ProblemStatements from "./Exceltry"
 import Team from "./Team"
