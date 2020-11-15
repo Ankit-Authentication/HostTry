@@ -145,10 +145,10 @@ return(
             <Form.Label>COURSE</Form.Label>
             <Form.Control as="select" name="course">  
               <option >COURSE</option>
-              <option value="2">B.TECH</option>
-              <option value="3">BCA</option>
-              <option value="4">B.E.</option>
-              <option value="5">B.Sc.</option>
+              <option value="B.TECH">B.TECH</option>
+              <option value="BCA">BCA</option>
+              <option value="B.E.">B.E.</option>
+              <option value="B.Sc.">B.Sc.</option>
             </Form.Control>
            </Form.Group>
              
