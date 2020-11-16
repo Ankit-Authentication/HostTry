@@ -87,15 +87,15 @@ const TableCell = ({ value }) => (
     
       return (
         <Fragment>
-          <Form>
+          <h1 className="h1"> PROBLEM STATEMENTS</h1>
+          <Form className="form">
           <Form.Group controlId="exampleForm.ControlSelect1">
-    <Form.Label style={{color:"#fff"}}>Example select</Form.Label>
     <Form.Control as="select">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+      <option>ALL</option>
+      <option>Mobile App Development</option>
+      <option>WEB APPLICATION</option>
+      <option>Smart Technologies</option>
+      <option>MISCELLANEOUS</option>
     </Form.Control>
   </Form.Group>
   

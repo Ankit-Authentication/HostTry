@@ -1,13 +1,15 @@
 import React,{useState} from "react";
 import { Button,Modal ,Table } from "react-bootstrap";
+import './Problem.css'
+
 function MyVerticallyCenteredModal(props) {
   console.log("data is ",props.data)
     return (
-      <Modal
+      <Modal className ="modal"
         {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter container"
+        centered         
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
@@ -15,16 +17,16 @@ function MyVerticallyCenteredModal(props) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <Table striped bordered hover>
-  <thead>
-    <tr>
-      <th colSpan="2">PROBLEM DESCRIPTION</th>
+        <Table className= "mtable" striped bordered hover>
+  <thead className="mthead">
+    <tr calssName ="mtt">
+      <th className ="mth" colSpan="2">PROBLEM DESCRIPTION</th>
 
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Code</td>
+      <td className ="">  Code </td>
       <td>{props.data.ps_code}</td>
 
     </tr>
@@ -34,13 +36,13 @@ function MyVerticallyCenteredModal(props) {
 
     </tr>
     <tr>
-      <td>Title</td>
-      <td>{props.data.ps_title}</td>
+      <td className="mtitle" >Title</td>
+      <td >{props.data.ps_title}</td>
 
     </tr>
     <tr>
       <td>Statement</td>
-      <td>{props.data.ps}</td>
+      <td className ="mtd">{props.data.ps}</td>
 
     </tr>
   </tbody>
