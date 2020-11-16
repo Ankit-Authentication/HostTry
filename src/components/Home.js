@@ -1,7 +1,7 @@
 import React ,{useEffect , Fragment}from "react";
 import  AOS from "aos";
 import "aos/dist/aos.css";
-
+import {navigate} from "@reach/router"
 import { Container,Row,Col, Card} from "react-bootstrap";
 import './Home.css';
 const Home=()=>{
@@ -15,7 +15,11 @@ const Home=()=>{
         AOS.refresh();
        
       }, []);
-      
+      const reg=()=>{
+    
+        navigate("/register");
+        
+       }
    
    const click=()=>{
     
@@ -34,7 +38,7 @@ return(<Fragment>
      <h3 style={{textAlign:"center"}} >(A NATIONAL LEVEL VIRTUAL-HACKATHON)</h3>
      <h5>ON</h5> <br/>
      <h1>18-19 DECEMBER 2020</h1> <br/>
-     <button className="regbtn"><span>Register</span></button>
+     <button className="regbtn" onClick={reg}><span>Register</span></button>
     </Col>
     <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
