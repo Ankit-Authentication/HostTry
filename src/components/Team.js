@@ -10,29 +10,34 @@ const Team=()=>{
             
             name:"Dr.NEETU SHARMA",
             title: "MENTOR",
-            image:"/Team/neetumam1.jpeg"
+            image:"/Team/neetumam1.jpeg",
+            social:<button className="button" onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100056394836125'}>Visit Profile</button>
         },
         {
            
             name:"MAHESH MALKHANI",
             title: "MENTOR",
-            image:"/Team/maheshsir.jpeg"
+            image:"/Team/maheshsir.jpeg",
+            social:<button className="button" onClick={event =>  window.location.href='https://www.facebook.com/mahesh.malkani.796'}>Visit Profile</button>
         },
         {
             
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
-            image:"/Team/aj.jpg"
+            image:"/Team/aj.jpg",
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100021723864058'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/arihantjain812000?r=nametag'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true' onClick={event => window.location.href='https://www.linkedin.com/in/arihant-jain-8642881a6'}></i>&emsp;</h2>
         },
         {
            name:"DEEPANSHI JAIN",
              title: "SOFTWARE DEVELOPER",
-             image:"/Team/deepanshi.jpeg"
+             image:"/Team/deepanshi.jpeg",
+             social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/deepanshi.jain.10/'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/deepanshi.jain.10/'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true'  onClick={event => window.location.href='https://www.linkedin.com/in/deepanshi-jain-090a3a1a6/'}></i>&emsp;</h2>
         },
         {
               name:"ANKIT GUPTA",
              title: "SOFTWARE DEVELOPER",
-             image:"/Team/Ankit.png"
+             image:"/Team/Ankit.png",
+             social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100007081412460'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/ankit_gupta2611/'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true'  onClick={event =>window.location.href='https://www.linkedin.com/in/ankit-gupta-7364b41ba/'}></i>&emsp;</h2>
         },
        
     ]
@@ -54,9 +59,10 @@ const Team=()=>{
                       </div>
                   </div>
                   <div className='lower-info'>
-                    <h3> { item.name } </h3>
+                    <h3 className="title"> { item.name } </h3>
                     <h4> { item.title } </h4>
-                    <button className="button">Visit Profile</button>
+             <h3 class="social" style={{bottom:"0px"}}>{item.social}</h3>
+                    {/*  */}
                   </div>
                 </div>
                 

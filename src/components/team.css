@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
 .Card{
     width: 300px;
-    height:400px;
+    height:430px;
+    margin: auto;
      background:white; 
      border-radius:10px;
     box-shadow:0px 1px 10px 1px black;
@@ -28,9 +31,10 @@
   
   .lower-info{
     margin-top: 60px;
-    height: 300px;
+    height: 250px;
     background: white;
     text-align:center;
+    bottom: 0px;
   }
   
   .lower-info h3,h4{
@@ -38,12 +42,14 @@
     padding:0;
   }
   
-  .lower-info h3{
+  .lower-info .title{
     color:#2f2d2e;
+    font-family: 'Yeseva One', cursive;
+    
     font-weight:700;
-    font-size:1 rem;
-    margin-top: 90px;
-    letter-spacing: 1px;
+    font-size:1.5rem;
+    margin-top: 100px;
+    
   }
   
   .lower-info h4{
@@ -59,6 +65,13 @@
     text-align:justify;
   }
   
+  .social{
+    height:100px
+  }
+  .social i{
+    margin-top: 20px;
+    cursor: pointer;
+  }
   .button{
     margin:1rem;
     margin-top:20PX;
