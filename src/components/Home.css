@@ -51,6 +51,7 @@ width:50%;
   }
 .section{
   margin-top: -500px;
+  padding: 1px 50px;
 }
 .info{
   padding: 30px 50px 30px 30px;
@@ -64,9 +65,41 @@ width:50%;
   text-align: center;
   
 }
+
+.cliens {
+  padding: 25px 0;
+  text-align: center;
+ 
+}
+
+.cliens img {
+  max-width: 85%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.cliens img:hover {
+  -webkit-filter: none;
+  filter: none;
+  transform: scale(1.8);
+}
+
+@media (max-width: 768px) {
+  .cliens img {
+    max-width: 40%;
+  }
+}
   @media (max-width: 900px) {
    
     .image{
       height:35%;
     }
    } 
+
+   #logoheading{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color:  #f1c40f;
+   }

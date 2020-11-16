@@ -1,7 +1,7 @@
 import React ,{useEffect , Fragment}from "react";
 import  AOS from "aos";
 import "aos/dist/aos.css";
-
+import {navigate} from "@reach/router"
 import { Container,Row,Col, Card} from "react-bootstrap";
 import './Home.css';
 const Home=()=>{
@@ -15,7 +15,11 @@ const Home=()=>{
         AOS.refresh();
        
       }, []);
-      
+      const reg=()=>{
+    
+        navigate("/register");
+        
+       }
    
    const click=()=>{
     
@@ -34,7 +38,7 @@ return(<Fragment>
      <h3 style={{textAlign:"center"}} >(A NATIONAL LEVEL VIRTUAL-HACKATHON)</h3>
      <h5>ON</h5> <br/>
      <h1>18-19 DECEMBER 2020</h1> <br/>
-     <button className="regbtn"><span>Register</span></button>
+     <button className="regbtn" onClick={reg}><span>Register</span></button>
     </Col>
     <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
@@ -65,9 +69,9 @@ return(<Fragment>
   <Row style={{width:"100%",marginTop:"100px"}}>
   
   <Col xl={6} md={6} sm={12}>
-  <h1 className="data" style={{fontSize:"40px"}}>ORGANISED BY</h1>
-    <Card style={{ width: '80%' ,backgroundColor:"transparent"}}>
-  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"40%",margin:"auto"}}/>
+  <h3 className="data" style={{fontSize:"40px"}}>ORGANISED BY</h3>
+    <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
+  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto"}}/>
   <Card.Body>
     <Card.Title>APPTECHTELL</Card.Title>
     <Card.Text>
@@ -77,8 +81,8 @@ return(<Fragment>
   
 </Card></Col>
     <Col xl={6} md={6} sm={12} onClick={click}>
-    <h1 className="data" style={{fontSize:"40px"}}>SPONSORED BY</h1>
-   <Card style={{ width: '80%' ,backgroundColor:"transparent"}}>
+    <h3 className="data" style={{fontSize:"40px"}}>SPONSORED BY</h3>
+   <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
   <Card.Img variant="top" src="/images/gitam-logo.png" style={{width:"40%",margin:"auto"}}/>
   <Card.Body>
     <Card.Title>GANGA INSTITUTE OF  TECHNOLOGY AND MANAGEMENT</Card.Title>
@@ -86,7 +90,7 @@ return(<Fragment>
     Approved by AICTE, New Delhi & Affiliated to Maharshi Dayanand University,Rohtak and HSBTE, Panchkula
     </Card.Text>
     <Card.Text>
-    Recognized under Section 2(f) of UGC Act , 1956
+    
     </Card.Text>
   </Card.Body>
   
@@ -95,7 +99,39 @@ return(<Fragment>
     
   </Row>
   
+  <section id="cliens" class="cliens section-bg">
+      <div class="container">
+          <h1 id = "logoheading">In Association with</h1>
+        <div class="row" data-aos="zoom-in">
 
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/webtek.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/iant.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/myweb.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/avinfosys.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/aptron_logo.png" class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/hcllogo.png" class="img-fluid" alt=""/>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 </Container>
 

@@ -7,35 +7,39 @@ const Team=()=>{
     <h1>TEAMS CARDS  </h1>
     const info=[
         {
-            name:"ARIHANT JAIN",
-            title: "SOFTWARE DEVELOPER",
-            image:"robot.png"
+            
+            name:"Dr.NEETU SHARMA",
+            title: "MENTOR",
+            image:"/Team/neetumam1.jpeg",
+            social:<button className="button" onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100056394836125'}>Visit Profile</button>
         },
         {
-            name:"Ankit GUPTA",
-            title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        },
-        {
-            name:"DEEPANSHI JAIN",
-            title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        },
-        {
-            name:"NEETU SHARMA",
-            title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        },
-        {
+           
             name:"MAHESH MALKHANI",
-            title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
+            title: "MENTOR",
+            image:"/Team/maheshsir.jpeg",
+            social:<button className="button" onClick={event =>  window.location.href='https://www.facebook.com/mahesh.malkani.796'}>Visit Profile</button>
         },
         {
+            
             name:"ARIHANT JAIN",
             title: "SOFTWARE DEVELOPER",
-            image:"apptechtell.png"
-        }
+            image:"/Team/aj.jpg",
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100021723864058'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/arihantjain812000?r=nametag'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true' onClick={event => window.location.href='https://www.linkedin.com/in/arihant-jain-8642881a6'}></i>&emsp;</h2>
+        },
+        {
+           name:"DEEPANSHI JAIN",
+             title: "SOFTWARE DEVELOPER",
+             image:"/Team/deepanshi.jpeg",
+             social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/deepanshi.jain.10/'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/deepanshi.jain.10/'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true'  onClick={event => window.location.href='https://www.linkedin.com/in/deepanshi-jain-090a3a1a6/'}></i>&emsp;</h2>
+        },
+        {
+              name:"ANKIT GUPTA",
+             title: "SOFTWARE DEVELOPER",
+             image:"/Team/Ankit.png",
+             social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100007081412460'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/ankit_gupta2611/'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true'  onClick={event =>window.location.href='https://www.linkedin.com/in/ankit-gupta-7364b41ba/'}></i>&emsp;</h2>
+        },
+       
     ]
 
   const[data,setData]=useState(info)
@@ -51,14 +55,14 @@ const Team=()=>{
                 <div className='Card'>
                   <div className='upper-container'>
                     <div className='image-container'>
-                    <img src={`/images/${item.image}`} className="img" alt='' height="100px" width="100px" />
+                    <img src={`/images/${item.image}` } className="img" alt='' height="100px" width="100px" />
                       </div>
                   </div>
-                  <div className='lower-container'>
-                    <h3> { item.name } </h3>
+                  <div className='lower-info'>
+                    <h3 className="title"> { item.name } </h3>
                     <h4> { item.title } </h4>
-                    <p> about </p>
-                    <button className="button">Visit Profile</button>
+             <h3 class="social" style={{bottom:"0px"}}>{item.social}</h3>
+                    {/*  */}
                   </div>
                 </div>
                 

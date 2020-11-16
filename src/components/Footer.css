@@ -3,6 +3,13 @@
     background-color: rgba(230, 178, 10, 0.8);
     color: #fff;
     bottom: 0px;
-    border-top-right-radius: 30%;
-    border-top-left-radius: 30%;
+      
+}
+
+#it{
+    font-size: 10px;
+}
+
+.footer-copyright{
+    border: 0.5 px solid black;
 }

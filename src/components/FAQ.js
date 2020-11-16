@@ -45,7 +45,7 @@ const Faqs=()=>{
           },
           {
             title: " What if I don't know how to code?",
-            content: "Not a problem! The entire PU Digital Hackathon team knew very little when they each attended their very first hackathon. It’s entirely irrelevant what your experience is going into a hackathon, it’s more about your interest in technology. Every PU Digital Hackathon Member is passionate about making their hackathons very welcoming and beginner-friendly."
+            content: "Not a problem! The entire WEB-A-THON team knew very little when they each attended their very first hackathon. It’s entirely irrelevant what your experience is going into a hackathon, it’s more about your interest in technology. Every WEB-A-THON Member is passionate about making their hackathons very welcoming and beginner-friendly."
           }
         
         ]
@@ -53,7 +53,7 @@ const Faqs=()=>{
     
 return(<Fragment>
   <Container>
-  <Row style={{width:"100%"}} >
+  <Row style={{width:"85%"}} >
   
     <Col lg={12} md={12} sm={12}><img src="/images/FAQ.png" className="image" style={{display:"block",margin:"auto"}}></img></Col>
   </Row>

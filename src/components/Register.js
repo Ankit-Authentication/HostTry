@@ -1,19 +1,23 @@
-import React ,{useState} from "react";
+import React ,{Fragment,useState} from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios"
 import { Form,Button ,Container,Row,Col} from "react-bootstrap";
 const Register=()=>{
 const [teamName, setTeamName]= useState()
 const[memNum,setMemNum]=useState()
+const [disable,setdisable]=useState(true)
+const [teamMember,setTeamMember]=useState()
+const [apiMessage,setApiMessage]=useState("")
 const team=[]
 const submitTeam=()=>{
-  console.log(team)
+  console.log(teamMember)
+  setdisable(true)
   axios({
     method: 'POST',
-    url: "http://web-a-thon.test/src/api/addPart.php",
+    url: "/api/addPart.php",
     headers: { 'content-type': 'application/json' },
-    data: team
-  }).then(data=>console.log(data))
+    data: teamMember
+  }).then(data=>setApiMessage(data.data))
 }
 const submit=(event)=>{
   event.preventDefault()
@@ -30,7 +34,12 @@ const submit=(event)=>{
     semister: event.target.sem.value
   })
   event.target.submit.disabled=true
- console.log (event)
+  if(team.length==memNum){
+    setdisable(false)
+    console.log(team)
+    setTeamMember(team)
+  }
+ console.log (team)
   
 }
 const handleteam=(e)=>{
@@ -46,8 +55,8 @@ const handleteam=(e)=>{
          
         console.log(memNum)
     }
-    
-return(
+    if(apiMessage===""){
+    return(
    
         
         <Container style={{color:"#fff"}}>
@@ -55,7 +64,7 @@ return(
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
             
-    <Col lg={9} md={7} sm={12}>
+    <Col lg={7} md={7} sm={12}>
     <Form.Group controlId="formBasicEmail">
     <Form.Label><h4>ENTER TEAM NAME</h4></Form.Label>
     <Form.Control type="text" onChange={handleteam.bind(this)} placeholder="Enter Team Name" />
@@ -63,7 +72,7 @@ return(
   </Form.Group>
      
     </Col>
-    <Col lg={3} md={3} sm={12}>
+    <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
     <Form.Label><h4>ENTER TEAM SIZE</h4></Form.Label>
     <Form.Control as="select"  onChange={handleChange.bind(this)}>
@@ -143,21 +152,21 @@ return(
 
 {(()=>{
     const data=[]
-    const form=(  <Form style={{margin:"auto"}} onSubmit={submit.bind(this)}>
+    const form=(  <Form style={{padding:"25px" , marginLeft:"10px"}} onSubmit={submit.bind(this)}>
         <Row style={{width:"100%"}}>
             
     <Col lg={6} md={6} sm={12}>
     <Form.Group controlId="formBasicEmail">
     <Form.Label>NAME</Form.Label>
-    <Form.Control type="text"  placeholder="Enter Team Name" name="name"/>
+    <Form.Control type="text"  placeholder="Enter Name" name="name" required/>
     
   </Form.Group>
      
     </Col>
     <Col lg={6} md={6} sm={12}>
     <Form.Group controlId="formBasicEmail">
-    <Form.Label>ROLL NUMBER</Form.Label>
-    <Form.Control type="text"  placeholder="Enter Team Name" name="roll"/>
+    <Form.Label>Roll Number/ Registration Number</Form.Label>
+    <Form.Control type="text"  placeholder="Enter  Roll No" name="roll" required/>
     </Form.Group>
     </Col>
     
@@ -166,16 +175,16 @@ return(
             
             <Col lg={6} md={6} sm={12}>
             <Form.Group controlId="formBasicEmail">
-            <Form.Label>CONTACT No.</Form.Label>
-            <Form.Control type="text"  placeholder="Enter Team Name" name="phn"/>
+            <Form.Label>Contact No</Form.Label>
+            <Form.Control type="text"  placeholder=" Enter Contact No" name="phn" required/>
             
           </Form.Group>
              
             </Col>
             <Col lg={6} md={6} sm={12}>
             <Form.Group controlId="formBasicEmail">
-            <Form.Label>MAIL ID</Form.Label>
-            <Form.Control type="text"  placeholder="Enter Team Name" name="mail"/>
+            <Form.Label>Mail Id</Form.Label>
+            <Form.Control type="mail"  placeholder="Enter Mail Id" name="mail" required/>
             </Form.Group>
             </Col>
             
@@ -184,8 +193,8 @@ return(
             
             <Col lg={6} md={6} sm={12}>
             <Form.Group controlId="formBasicEmail">
-            <Form.Label>UNIVERSITY NAME</Form.Label>
-            <Form.Control type="text" placeholder="Enter Team Name" name="uni"/>
+            <Form.Label>University </Form.Label>
+            <Form.Control type="text" placeholder="Enter  University id" name="uni" required/>
             
           </Form.Group>
              
@@ -193,7 +202,7 @@ return(
             <Col lg={6} md={6} sm={12}>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>COLLEGE NAME</Form.Label>
-            <Form.Control type="text"  placeholder="Enter Team Name" name="col"/>
+            <Form.Control type="text"  placeholder="Enter College Name" name="col" required/>
             </Form.Group>
             </Col>
             
@@ -203,7 +212,7 @@ return(
             <Col lg={6} md={6} sm={12}>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>COURSE</Form.Label>
-            <Form.Control as="select" name="course">  
+            <Form.Control as="select" name="course" >  
               <option >COURSE</option>
               <option value="B.TECH">B.TECH</option>
               <option value="BCA">BCA</option>
@@ -231,13 +240,13 @@ return(
             </Col>
             
           </Row>
-  <Button variant="primary" type="submit" name="submit" disabled={false}>
+  <Button variant="primary" type="submit" name="submit"  disabled={false}>
     ADD MEMBER
   </Button>
 </Form>)
     for (let i = 0; i < memNum; i++) {
    
-     data.push( <fieldset style={{border:"2px solid white",margin:"auto"}}>
+     data.push( <fieldset style={{border:"2px solid white",marginBottom:"50px", width:"100%"}}>
       <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i+1} DETAILS</legend>
       {form}
     </fieldset> )  
@@ -245,7 +254,7 @@ return(
         }
         return data
         })()}
-<Button variant="primary" onClick={submitTeam}>
+<Button variant="primary" onClick={submitTeam} disabled={disable}>
     SUBMIT TEAM
   </Button>
         </Container>
@@ -254,6 +263,34 @@ return(
 
         // <h1>hello</h1>
     
-)
+)  
+    }
+    else if(apiMessage=="team added successfully"){
+     return (<Fragment>
+       
+          <img src="/images/added.png"  style={{width:"30%",color:"white",display:"block",margin:"auto",padding:"30px"}}/>
+       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>Team Added Successfully</h1>
+     <h5 style={{color:"white",width:"100%",margin:"auto",textAlign:"center",padding:"20px"}}>we will contact you soon</h5>
+      
+        
+     
+   
+     </Fragment>)
+    }
+else{
+  return (
+    <Fragment>
+       
+          <img src="/images/robot.png"  style={{width:"30%",color:"white",display:"block",margin:"auto",padding:"30px"}}/>
+       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>some error occured please try again or contact us on our mail id</h1>
+    
+      
+        
+     
+   
+     </Fragment>
+
+    )
+}
 }
 export default Register
