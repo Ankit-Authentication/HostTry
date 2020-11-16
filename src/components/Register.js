@@ -14,7 +14,7 @@ const submitTeam=()=>{
   setdisable(true)
   axios({
     method: 'POST',
-    url: "http://web-a-thon.test/src/api/addPart.php",
+    url: "/api/addPart.php",
     headers: { 'content-type': 'application/json' },
     data: teamMember
   }).then(data=>setApiMessage(data.data))
