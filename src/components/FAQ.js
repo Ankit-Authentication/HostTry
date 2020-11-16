@@ -45,7 +45,7 @@ const Faqs=()=>{
           },
           {
             title: " What if I don't know how to code?",
-            content: "Not a problem! The entire PU Digital Hackathon team knew very little when they each attended their very first hackathon. It’s entirely irrelevant what your experience is going into a hackathon, it’s more about your interest in technology. Every PU Digital Hackathon Member is passionate about making their hackathons very welcoming and beginner-friendly."
+            content: "Not a problem! The entire WEB-A-THON team knew very little when they each attended their very first hackathon. It’s entirely irrelevant what your experience is going into a hackathon, it’s more about your interest in technology. Every WEB-A-THON Member is passionate about making their hackathons very welcoming and beginner-friendly."
           }
         
         ]
