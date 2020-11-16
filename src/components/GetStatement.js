@@ -3,7 +3,7 @@ import { Button,Modal ,Table } from "react-bootstrap";
 import './Problem.css'
 
 function MyVerticallyCenteredModal(props) {
-  console.log("data is ",props.data)
+  // console.log("data is ",props.data)
     return (
       <Modal className ="modal"
         {...props}
@@ -57,7 +57,7 @@ function MyVerticallyCenteredModal(props) {
   }
 const GetStatement=(row,column)=>{
     const [modalShow, setModalShow] = useState(false);
-console.log(row.cell.row.original)
+// console.log(row.cell.row.original)
     return (
       <>
         <p onClick={() => setModalShow(true)} style={{fontSize:"10px",cursor:"pointer"}}>
