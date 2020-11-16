@@ -71,7 +71,7 @@ return(<Fragment>
   <Col xl={6} md={6} sm={12}>
   <h3 className="data" style={{fontSize:"40px"}}>ORGANISED BY</h3>
     <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
-  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"40%",margin:"auto"}}/>
+  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto"}}/>
   <Card.Body>
     <Card.Title>APPTECHTELL</Card.Title>
     <Card.Text>
@@ -101,7 +101,7 @@ return(<Fragment>
   
   <section id="cliens" class="cliens section-bg">
       <div class="container">
-          <h1 id = "logoheading">In Association With</h1>
+          <h1 id = "logoheading">In Association with</h1>
         <div class="row" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">

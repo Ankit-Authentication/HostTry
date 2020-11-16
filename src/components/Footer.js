@@ -22,9 +22,9 @@ const Footer = () => {
           </MDBCol>
           <MDBCol md="4" style={{color:"#fff", textAlign:"center" , marginTop: "25px"}}>
             <h5 className="title" style={{color:"black"}}>Get In Touch With Us</h5>
-           <p><i class="fa fa-whatsapp" onClick={event =>  window.location.href='/your-href'} aria-hidden="true"></i> <a href="https://api.whatsapp.com/send?phone=9518407256" style={{color:"white",textDecoration:"none"}}>9518407256</a>   </p>
-           <p><i class="fa fa-whatsapp" onClick={event =>  window.location.href='/your-href'} aria-hidden="true"></i> <a href="https://api.whatsapp.com/send?phone=8447771951" style={{color:"white",textDecoration:"none"}}>8447771951</a></p>
-           <p><i class="fa fa-whatsapp" onClick={event =>  window.location.href='/your-href'} aria-hidden="true"></i><a href="https://api.whatsapp.com/send?phone=8168095773" style={{color:"white",textDecoration:"none"}}> 8168095773 </a></p>
+           <p><i class="fa fa-whatsapp" onClick={event =>  window.location.href='/your-href'} aria-hidden="true"></i> <a href="https://api.whatsapp.com/send?phone=+919518407256" style={{color:"white",textDecoration:"none"}}>9518407256</a>   </p>
+           <p><i class="fa fa-whatsapp" onClick={event =>  window.location.href='/your-href'} aria-hidden="true"></i> <a href="https://api.whatsapp.com/send?phone=+918447771951" style={{color:"white",textDecoration:"none"}}>8447771951</a></p>
+           <p><i class="fa fa-whatsapp" onClick={event =>  window.location.href='/your-href'} aria-hidden="true"></i><a href="https://api.whatsapp.com/send?phone=+918168095773" style={{color:"white",textDecoration:"none"}}> 8168095773 </a></p>
            <p><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;<a href="mailto:YourMail@apptechtell@gmail.com" style={{color:"white",textDecoration:"none"}}>apptechtell@gmail.com</a> </p>
           </MDBCol>
         </MDBRow>
