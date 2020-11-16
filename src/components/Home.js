@@ -69,8 +69,8 @@ return(<Fragment>
   <Row style={{width:"100%",marginTop:"100px"}}>
   
   <Col xl={6} md={6} sm={12}>
-  <h1 className="data" style={{fontSize:"40px"}}>ORGANISED BY</h1>
-    <Card style={{ width: '80%' ,backgroundColor:"transparent"}}>
+  <h3 className="data" style={{fontSize:"40px"}}>ORGANISED BY</h3>
+    <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
   <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"40%",margin:"auto"}}/>
   <Card.Body>
     <Card.Title>APPTECHTELL</Card.Title>
@@ -81,8 +81,8 @@ return(<Fragment>
   
 </Card></Col>
     <Col xl={6} md={6} sm={12} onClick={click}>
-    <h1 className="data" style={{fontSize:"40px"}}>SPONSORED BY</h1>
-   <Card style={{ width: '80%' ,backgroundColor:"transparent"}}>
+    <h3 className="data" style={{fontSize:"40px"}}>SPONSORED BY</h3>
+   <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
   <Card.Img variant="top" src="/images/gitam-logo.png" style={{width:"40%",margin:"auto"}}/>
   <Card.Body>
     <Card.Title>GANGA INSTITUTE OF  TECHNOLOGY AND MANAGEMENT</Card.Title>
