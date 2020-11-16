@@ -1,8 +1,8 @@
 import React ,{useEffect , useState, Fragment}from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
-import './FAQ.css'
+import Image from "./Image"
+import './schedule.css'
 const Schedule=()=>{
 
  return(
@@ -12,7 +12,7 @@ const Schedule=()=>{
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
       iconStyle={{ background: 'white', color: 'rgb(33 , 150 ,243)' }}
-     
+     icon={<Image image="images/inn.png" style={{border:'5px solid white'}}/>}
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle" >10:00 AM- 10:30 AM</h4>
@@ -24,7 +24,7 @@ const Schedule=()=>{
       className="vertical-timeline-element--work"
       
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-     
+      icon={<Image image="images/idea.jpg"/>}
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">12:00 PM - 2:00 PM</h4>
@@ -35,7 +35,7 @@ const Schedule=()=>{
       className="vertical-timeline-element--work"
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       iconStyle={{ background: 'white', color: '#fff' }}
-     
+      icon={<Image image="images/e1.jpg"/>}
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">7:00 PM - 09:00 PM</h4>
@@ -52,7 +52,7 @@ const Schedule=()=>{
       className="vertical-timeline-element--work"
       
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-     
+      icon={<Image image="images/semi.jpeg" style={{border:'5px solid white'}}/>}
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>19-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">12:00 PM - 2:00 PM</h4>
@@ -68,7 +68,7 @@ const Schedule=()=>{
       className="vertical-timeline-element--education"
       iconStyle={{ background: 'white', color: '#fff' }}
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-
+      icon={<Image image="images/grand1.jpg" style={{border:'5px solid white'}}/>}
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>19-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">07:00 PM - 09:00 PM</h4>
@@ -78,7 +78,7 @@ const Schedule=()=>{
       className="vertical-timeline-element--education"
       
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-     
+      icon={<Image image="images/trophy.png" style={{border:'5px solid white'}}/>}
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>20-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">11:00 AM Onwards</h4>
