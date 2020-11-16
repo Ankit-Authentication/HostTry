@@ -69,7 +69,7 @@ return(<Fragment>
   <Row style={{width:"100%",marginTop:"100px"}}>
   
   <Col xl={6} md={6} sm={12}>
-  <h3 className="data" style={{fontSize:"40px"}}>ORGANISED BY</h3>
+  <h3 className="data" style={{fontSize:"40px",padding:"20px"}}>ORGANISED BY</h3>
     <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
   <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto"}}/>
   <Card.Body>
@@ -87,7 +87,7 @@ return(<Fragment>
   <Card.Body>
     <Card.Title>GANGA INSTITUTE OF  TECHNOLOGY AND MANAGEMENT</Card.Title>
     <Card.Text>
-    Approved by AICTE, New Delhi & Affiliated to Maharshi Dayanand University,Rohtak and HSBTE, Panchkula
+    Approved by AICTE, New Delhi & Affiliated to Maharshi Dayanand University , Rohtak and HSBTE, Panchkula
     </Card.Text>
     <Card.Text>
     
