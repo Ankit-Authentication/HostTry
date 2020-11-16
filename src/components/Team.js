@@ -10,7 +10,7 @@ const Team=()=>{
             
             name:"Dr.NEETU SHARMA",
             title: "MENTOR",
-            image:"/Team/neetumam.jpeg"
+            image:"/Team/neetumam1.jpeg"
         },
         {
            
