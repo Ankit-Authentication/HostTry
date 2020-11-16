@@ -9,14 +9,14 @@ const Team=()=>{
         {
             
             name:"Dr.NEETU SHARMA",
-            title: "SOFTWARE DEVELOPER",
+            title: "MENTOR",
             image:"/Team/neetumam.jpeg"
         },
         {
            
             name:"MAHESH MALKHANI",
-            title: "SOFTWARE DEVELOPER",
-            image:"/Team/maheshsir.jpg"
+            title: "MENTOR",
+            image:"/Team/maheshsir.jpeg"
         },
         {
             
@@ -27,7 +27,7 @@ const Team=()=>{
         {
            name:"DEEPANSHI JAIN",
              title: "SOFTWARE DEVELOPER",
-             image:"/Team/dj3.png"
+             image:"/Team/deepanshi.jpeg"
         },
         {
               name:"ANKIT GUPTA",
