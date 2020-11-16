@@ -15,9 +15,9 @@ const Schedule=()=>{
      
     >
       <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h3>
-      <h4 className="vertical-timeline-element-subtitle" >09:00 AM- 10:00 AM</h4>
+      <h4 className="vertical-timeline-element-subtitle" >10:00 AM- 10:30 AM</h4>
 
-      <p style ={{fontSize:"25px"}}>Inaugration </p>
+      <p style ={{fontSize:"25px"}}>Inauguration </p>
       
     </VerticalTimelineElement>
     <VerticalTimelineElement
@@ -37,7 +37,7 @@ const Schedule=()=>{
       iconStyle={{ background: 'white', color: '#fff' }}
      
     >
-      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>20-12-2020</h3>
+      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">7:00 PM - 09:00 PM</h4>
       <p style ={{fontSize:"25px"}}> Evaluation</p>
       <li> <b>Idea</b></li>
@@ -70,7 +70,7 @@ const Schedule=()=>{
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 
     >
-      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>20-12-2020</h3>
+      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>19-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">07:00 PM - 09:00 PM</h4>
       <p style ={{fontSize:"25px"}}>Final Idea Pitch</p>
     </VerticalTimelineElement>
@@ -80,7 +80,7 @@ const Schedule=()=>{
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
      
     >
-      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>21-12-2020</h3>
+      <h3 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>20-12-2020</h3>
       <h4 className="vertical-timeline-element-subtitle">11:00 AM Onwards</h4>
       <p style ={{fontSize:"25px"}}>Felicitation Ceremony</p>
     </VerticalTimelineElement>
