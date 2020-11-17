@@ -13,12 +13,19 @@ const team=[]
 const submitTeam=()=>{
   console.log(teamMember)
   setdisable(true)
-  axios({
+  
+  const requestOptions = {
     method: 'POST',
-    url: "https://web-a-thon.000webhostapp.com/addPart.php",
-    headers: { 'content-type': 'application/json' },
-    data: teamMember
-  }).then(data=>setApiMessage(data.data))
+    headers: { 'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  
+  },
+    body: JSON.stringify(teamMember)
+};
+fetch('https://web-a-thon.000webhostapp.com/addPart.php', requestOptions)
+    .then(response => response.json())
+    .then(data => setApiMessage(data['message']));
+ 
 }
 const submit=(event)=>{
   event.preventDefault()
