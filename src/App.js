@@ -26,7 +26,7 @@ const App = () => {
 	    },
 	   
   }} 
-  height="100%"
+  // height="100%"
   className="canvas"
       />
       <Navbars />
