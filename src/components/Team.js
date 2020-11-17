@@ -49,9 +49,10 @@ const Team=()=>{
      console.log("inf",inf)
      return(
          inf.map((item,index)=>{
-             return(
+           if(index<2){
+              return(
                  
-                 <Col lg={4} xl={4} md={6} sm={12} style={{paddingBottom:"50px"}}>
+                 <Col lg={6} xl={6} md={6} sm={12} style={{paddingBottom:"50px"}}>
                 <div className='Card'>
                   <div className='upper-container'>
                     <div className='image-container'>
@@ -68,6 +69,28 @@ const Team=()=>{
                 
                 </Col>
              )
+           }
+            else{
+              return(
+                 
+                <Col lg={4} xl={4} md={6} sm={12} style={{paddingBottom:"50px"}}>
+               <div className='Card'>
+                 <div className='upper-container'>
+                   <div className='image-container'>
+                   <img src={`/images/${item.image}` } className="img" alt='' height="100px" width="100px" />
+                     </div>
+                 </div>
+                 <div className='lower-info'>
+                   <h3 className="title"> { item.name } </h3>
+                   <h4> { item.title } </h4>
+            <h3 class="social" style={{bottom:"0px"}}>{item.social}</h3>
+                   {/*  */}
+                 </div>
+               </div>
+               
+               </Col>
+            )
+            }
          })
      )
 
