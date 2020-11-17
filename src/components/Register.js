@@ -13,18 +13,24 @@ const team=[]
 const submitTeam=()=>{
   console.log(teamMember)
   setdisable(true)
+  var xmlhttp = new XMLHttpRequest();
+xmlhttp.open("POST", 'https://web-a-thon.000webhostapp.com/addPart.php');
+xmlhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+xmlhttp.send(JSON.stringify(teamMember));
+console.log(XMLHttpRequest.response)
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json',
+//     cache: "no-store",
+//     'Cache-Control': 'no-cache'
   
-  const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json',
-    'Accept': 'application/json'
-  
-  },
-    body: JSON.stringify(teamMember)
-};
-fetch('https://web-a-thon.000webhostapp.com/addPart.php', requestOptions)
-    .then(response => response.json())
-    .then(data => setApiMessage(data['message']));
+//   },
+//     body: JSON.stringify(teamMember)
+// };
+// fetch('https://web-a-thon.000webhostapp.com/addPart.php', requestOptions)
+//     .then(response => 
+//      response.json()
+//     ).then(data=>console.log(data))
  
 }
 const submit=(event)=>{
