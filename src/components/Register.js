@@ -18,7 +18,7 @@ const submitTeam=()=>{
 // xmlhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 // xmlhttp.send(JSON.stringify(teamMember));
 // console.log(XMLHttpRequest.response)
-axios.post('http://web-a-thon.000webhostapp.com/addPart.php', JSON.stringify(teamMember))
+axios.post('https://web-a-thon.000webhostapp.com/addPart.php', JSON.stringify(teamMember))
 .then(function (response) {
   console.log(response);
 })
