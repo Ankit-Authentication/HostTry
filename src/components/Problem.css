@@ -72,8 +72,16 @@ margin:auto;
       flex:auto;
       margin-top: 10px;
       padding:10px;
+      font-weight: 500;
    }
-  
+  .number{
+     font-weight: 800 !important;
+     background-color: antiquewhite;
+  }
+  button:disabled,
+button[disabled]{
+background-color: rgb(210, 213, 252);
+}
   @media (max-width: 1000px){
    th{
        

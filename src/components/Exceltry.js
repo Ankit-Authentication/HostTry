@@ -189,19 +189,19 @@ change(event.target.value)
         <button onClick={() => previousPage()} disabled={!canPreviousPage}>
           {'<'}
         </button>{' '}
-        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+        <button className='number' onClick={() => gotoPage(0)} >
           {'1'}
         </button>
-        <button onClick={() => gotoPage(1)} >
+        <button className='number' onClick={() => gotoPage(1)} >
           {'2'}
         </button>
-        <button onClick={() => gotoPage(2)} >
+        <button className='number' onClick={() => gotoPage(2)} >
           {'3'}
         </button>
-        <button onClick={() => gotoPage(3)} >
+        <button className='number' onClick={() => gotoPage(3)} >
           {'4'}
         </button>
-        <button onClick={() => gotoPage(4)} disabled={!canNextPage}>
+        <button className='number' onClick={() => gotoPage(4)} >
           {'5'}
         </button>
          
