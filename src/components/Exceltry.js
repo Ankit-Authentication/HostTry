@@ -184,7 +184,7 @@ change(event.target.value)
         </table>
         <div className="pagination" >
        
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+        <button onClick={() => previousPage()} disabled={!canPreviousPage} >
           {'<'}
         </button>{' '}
         <button className='number' onClick={() => gotoPage(0)} >

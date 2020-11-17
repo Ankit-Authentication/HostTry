@@ -71,14 +71,14 @@ const handleteam=(e)=>{
     return(
    
         
-        <Container className = "register" style={{color:"#fff"}}>
+        <Container className= "refi" style={{color:"#fff"}}>
             <h1 style={{textAlign:"center",margin:"50px"}}>REGISTER YOUR TEAM</h1>
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
             
     <Col lg={4} md={4} sm={12}>
     <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4> TEAM NAME</h4></Form.Label>
+    <Form.Label><h5> Team Name</h5></Form.Label>
     <Form.Control type="text" onChange={handleteam.bind(this)} placeholder="Enter Team Name" />
     
   </Form.Group>
@@ -86,9 +86,9 @@ const handleteam=(e)=>{
     </Col>
     <Col lg={3} md={3} sm={12}>
         <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4> TEAM SIZE</h4></Form.Label>
+    <Form.Label><h5> Team Size</h5></Form.Label>
     <Form.Control as="select"  onChange={handleChange.bind(this)}>
-    <option >TEAM SIZE</option>
+    <option >Team Size</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
@@ -100,7 +100,7 @@ const handleteam=(e)=>{
     </Col>
     <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4> PROBLEM STATEMENT CODE</h4></Form.Label>
+    <Form.Label><h5> Problem statement</h5></Form.Label>
     <Form.Control as="select" onChange={probst.bind(this)}>
     <option >CODE</option>
     <option value="G001">G001</option>
