@@ -63,7 +63,16 @@ margin:auto;
    width:auto;
   }
   
-   
+   .pagination{
+      width:50%;
+      display:flex;
+      margin:auto
+   }
+   .pagination button{
+      flex:auto;
+      margin-top: 10px;
+      padding:10px;
+   }
   
   @media (max-width: 1000px){
    th{

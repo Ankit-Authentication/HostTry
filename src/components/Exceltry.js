@@ -134,7 +134,7 @@ change(event.target.value)
     previousPage,
     setPageSize,
     state: { pageIndex, pageSize },
-      } = useTable({ columns, data,initialState: { pageIndex: 2 }, }, usePagination)
+      } = useTable({ columns, data,initialState: { pageIndex: 0,pageSize: 10 }, }, usePagination)
     
       return (
         <Fragment>
