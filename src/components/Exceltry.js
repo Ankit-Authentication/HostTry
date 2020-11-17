@@ -2,7 +2,7 @@ import React ,{useEffect , useState, Fragment}from "react";
 import { csv } from 'd3';
 import { Form } from "react-bootstrap";
 import dataex from './Problem Statement GITAM.csv';
-import { useTable } from "react-table";
+import { useTable , usePagination  } from "react-table";
 import GetStatement from "./GetStatement";
 // import 'reactjs-popup/dist/index.css'
 import './Problem.css'
@@ -122,9 +122,19 @@ change(event.target.value)
         getTableProps,
         getTableBodyProps,
         headerGroups,
-        rows,
+        // rows,
         prepareRow,
-      } = useTable({ columns, data })
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
+    state: { pageIndex, pageSize },
+      } = useTable({ columns, data,initialState: { pageIndex: 0,pageSize: 10 }, }, usePagination)
     
       return (
         <Fragment>
@@ -160,25 +170,52 @@ change(event.target.value)
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {rows.map(row => {
-              prepareRow(row)
-              return (
-                <tr {...row.getRowProps()}>
-                  {row.cells.map(cell => {
-                    return (
-                      <td
-                        {...cell.getCellProps()}
-                       
-                      >
-                        {cell.render('Cell')}
-                      </td>
-                    )
-                  })}
-                </tr>
-              )
-            })}
+          {page.map((row, i) => {
+            prepareRow(row)
+            return (
+              <tr {...row.getRowProps()}>
+                {row.cells.map(cell => {
+                  return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                })}
+              </tr>
+            )
+          })}
           </tbody>
         </table>
+        <div className="pagination" >
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {'<<'}
+        </button>{' '}
+        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+          {'<'}
+        </button>{' '}
+        <button className='number' onClick={() => gotoPage(0)} >
+          {'1'}
+        </button>
+        <button className='number' onClick={() => gotoPage(1)} >
+          {'2'}
+        </button>
+        <button className='number' onClick={() => gotoPage(2)} >
+          {'3'}
+        </button>
+        <button className='number' onClick={() => gotoPage(3)} >
+          {'4'}
+        </button>
+        <button className='number' onClick={() => gotoPage(4)} >
+          {'5'}
+        </button>
+         
+       
+        <button onClick={() => nextPage()} disabled={!canNextPage}>
+          {'>'}
+        </button>{' '}
+        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          {'>>'}
+        </button>{' '}
+    
+        
+       
+      </div>
         </Fragment>
       )
     
