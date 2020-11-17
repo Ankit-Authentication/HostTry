@@ -81,7 +81,7 @@ const handleteam=(e)=>{
         <Form.Group controlId="formBasicEmail">
     <Form.Label><h5> Team Size</h5></Form.Label>
     <Form.Control as="select"  onChange={handleChange.bind(this)}>
-    <option >TEAM SIZE</option>
+    <option >Team Size</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
@@ -93,13 +93,8 @@ const handleteam=(e)=>{
     </Col>
     <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
-<<<<<<< HEAD
-    <Form.Label><h5> Problrm Statement Code</h5></Form.Label>
-    <Form.Control as="select"  name ="ps">
-=======
-    <Form.Label><h4> PROBLEM STATEMENT CODE</h4></Form.Label>
+    <Form.Label><h5> Problem statement</h5></Form.Label>
     <Form.Control as="select" onChange={probst.bind(this)}>
->>>>>>> 66a072694e5acd5a3dcd708430676dd2e4ef711d
     <option >CODE</option>
     <option value="G001">G001</option>
     <option value="G002">G002</option>
