@@ -2,7 +2,7 @@ import React ,{useEffect , useState, Fragment}from "react";
 import { csv } from 'd3';
 import { Form } from "react-bootstrap";
 import dataex from './Problem Statement GITAM.csv';
-import { useTable } from "react-table";
+import { useTable , usePagination  } from "react-table";
 import GetStatement from "./GetStatement";
 // import 'reactjs-popup/dist/index.css'
 import './Problem.css'
@@ -122,9 +122,19 @@ change(event.target.value)
         getTableProps,
         getTableBodyProps,
         headerGroups,
-        rows,
+        // rows,
         prepareRow,
-      } = useTable({ columns, data })
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
+    state: { pageIndex, pageSize },
+      } = useTable({ columns, data,initialState: { pageIndex: 2 }, }, usePagination)
     
       return (
         <Fragment>
@@ -160,25 +170,52 @@ change(event.target.value)
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {rows.map(row => {
-              prepareRow(row)
-              return (
-                <tr {...row.getRowProps()}>
-                  {row.cells.map(cell => {
-                    return (
-                      <td
-                        {...cell.getCellProps()}
-                       
-                      >
-                        {cell.render('Cell')}
-                      </td>
-                    )
-                  })}
-                </tr>
-              )
-            })}
+          {page.map((row, i) => {
+            prepareRow(row)
+            return (
+              <tr {...row.getRowProps()}>
+                {row.cells.map(cell => {
+                  return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                })}
+              </tr>
+            )
+          })}
           </tbody>
         </table>
+        <div className="pagination" style={{width:"100px",textAlign:"center"}}>
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {'<<'}
+        </button>{' '}
+        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+          {'<'}
+        </button>{' '}
+        <span style={{color:'white'}}>
+          Page{' '}
+          <strong>
+            {pageIndex + 1} of {pageOptions.length}
+          </strong>{' '}
+        </span>
+        <button onClick={() => nextPage()} disabled={!canNextPage}>
+          {'>'}
+        </button>{' '}
+        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          {'>>'}
+        </button>{' '}
+        <span style={{color:'white',display:'flex',width:'100%'}}>
+          | Go to page:{' '}
+          <input
+            type="text"
+            defaultValue={pageIndex + 1}
+            onChange={e => {
+              const page = e.target.value ? Number(e.target.value) - 1 : 0
+              gotoPage(page)
+            }}
+           
+          />
+        </span>{' '}
+        
+       
+      </div>
         </Fragment>
       )
     
