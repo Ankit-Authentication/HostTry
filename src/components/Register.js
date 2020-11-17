@@ -59,22 +59,22 @@ const handleteam=(e)=>{
     return(
    
         
-        <Container style={{color:"#fff"}}>
+        <Container className = "register" style={{color:"#fff"}}>
             <h1 style={{textAlign:"center",margin:"50px"}}>REGISTER YOUR TEAM</h1>
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
             
-    <Col lg={7} md={7} sm={12}>
+    <Col lg={4} md={4} sm={12}>
     <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4>ENTER TEAM NAME</h4></Form.Label>
+    <Form.Label><h4> TEAM NAME</h4></Form.Label>
     <Form.Control type="text" onChange={handleteam.bind(this)} placeholder="Enter Team Name" />
     
   </Form.Group>
      
     </Col>
-    <Col lg={5} md={5} sm={12}>
+    <Col lg={3} md={3} sm={12}>
         <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4>ENTER TEAM SIZE</h4></Form.Label>
+    <Form.Label><h4> TEAM SIZE</h4></Form.Label>
     <Form.Control as="select"  onChange={handleChange.bind(this)}>
     <option >TEAM SIZE</option>
     <option value="2">2</option>
@@ -146,6 +146,66 @@ const handleteam=(e)=>{
 
 
     </Col>
+    <Col lg={5} md={5} sm={12}>
+        <Form.Group controlId="formBasicEmail">
+    <Form.Label><h4> PROBLEM STATEMENT CODE</h4></Form.Label>
+    <Form.Control as="select"  name ="ps">
+    <option >CODE</option>
+    <option value="G001">G001</option>
+    <option value="G002">G002</option>
+    <option value="G003">G003</option>
+    <option value="G004">G004</option>
+    <option value="G005">G005</option>
+    <option value="G006">G006</option>
+    <option value="G007">G007</option>
+    <option value="G008">G008</option>
+    <option value="G009">G009</option>
+    <option value="G010">G010</option>
+    <option value="G011">G011</option>
+    <option value="G012">G012</option>
+    <option value="G013">G013</option>
+    <option value="G014">G014</option>
+    <option value="G015">G015</option>
+    <option value="G016">G016</option>
+    <option value="G017">G017</option>
+    <option value="G018">G018</option>
+    <option value="G019">G019</option>
+    <option value="G020">G020</option>
+    <option value="G021">G021</option>
+    <option value="G022">G022</option>
+    <option value="G023">G023</option>
+    <option value="G024">G024</option>
+    <option value="G025">G025</option>
+    <option value="G026">G026</option>
+    <option value="G027">G027</option>
+    <option value="G028">G028</option>
+    <option value="G029">G029</option>
+    <option value="G030">G030</option>
+    <option value="G031">G031</option>
+    <option value="G032">G032</option>
+    <option value="G033">G033</option>
+    <option value="G034">G034</option>
+    <option value="G035">G035</option>
+    <option value="G036">G036</option>
+    <option value="G037">G037</option>
+    <option value="G038">G038</option>
+    <option value="G039">G039</option>
+    <option value="G040">G040</option>
+    <option value="G041">G041</option>
+    <option value="G042">G042</option>
+    <option value="G043">G043</option>
+    <option value="G044">G044</option>
+    <option value="G045">G045</option>
+    <option value="G046">G046</option>
+    <option value="G047">G047</option>
+    <option value="G048">G048</option>
+    <option value="G049">G049</option>
+    <option value="G050">G050</option>
+    </Form.Control>
+  </Form.Group>
+
+            </Col>
+
    
   </Row>
 </Form>
@@ -212,7 +272,7 @@ const handleteam=(e)=>{
             <Col lg={6} md={6} sm={12}>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>COURSE</Form.Label>
-            <Form.Control as="select" name="course" >  
+            <Form.Control as="select" placeholder="Enter course " name="course" requited >  
               <option >COURSE</option>
               <option value="B.TECH">B.TECH</option>
               <option value="BCA">BCA</option>
@@ -237,8 +297,8 @@ const handleteam=(e)=>{
               <option value="8">8th</option>
             </Form.Control>
             </Form.Group>
-            </Col>
-            
+              </Col>
+                        
           </Row>
   <Button variant="primary" type="submit" name="submit"  disabled={false}>
     ADD MEMBER
