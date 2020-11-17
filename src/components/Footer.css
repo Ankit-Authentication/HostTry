@@ -2,7 +2,8 @@
 .foot{
     background-color: rgba(230, 178, 10, 0.8);
     color: #fff;
-    bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
       
 }
 
