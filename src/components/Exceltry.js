@@ -182,37 +182,37 @@ change(event.target.value)
           })}
           </tbody>
         </table>
-        <div className="pagination" style={{width:"100px",textAlign:"center"}}>
+        <div className="pagination" >
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
         </button>{' '}
         <button onClick={() => previousPage()} disabled={!canPreviousPage}>
           {'<'}
         </button>{' '}
-        <span style={{color:'white'}}>
-          Page{' '}
-          <strong>
-            {pageIndex + 1} of {pageOptions.length}
-          </strong>{' '}
-        </span>
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {'1'}
+        </button>
+        <button onClick={() => gotoPage(1)} >
+          {'2'}
+        </button>
+        <button onClick={() => gotoPage(2)} >
+          {'3'}
+        </button>
+        <button onClick={() => gotoPage(3)} >
+          {'4'}
+        </button>
+        <button onClick={() => gotoPage(4)} disabled={!canNextPage}>
+          {'5'}
+        </button>
+         
+       
         <button onClick={() => nextPage()} disabled={!canNextPage}>
           {'>'}
         </button>{' '}
         <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
           {'>>'}
         </button>{' '}
-        <span style={{color:'white',display:'flex',width:'100%'}}>
-          | Go to page:{' '}
-          <input
-            type="text"
-            defaultValue={pageIndex + 1}
-            onChange={e => {
-              const page = e.target.value ? Number(e.target.value) - 1 : 0
-              gotoPage(page)
-            }}
-           
-          />
-        </span>{' '}
+    
         
        
       </div>
