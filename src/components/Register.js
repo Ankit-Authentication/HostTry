@@ -8,13 +8,14 @@ const[memNum,setMemNum]=useState()
 const [disable,setdisable]=useState(true)
 const [teamMember,setTeamMember]=useState()
 const [apiMessage,setApiMessage]=useState("")
+const [problem,setproblem]=useState()
 const team=[]
 const submitTeam=()=>{
   console.log(teamMember)
   setdisable(true)
   axios({
     method: 'POST',
-    url: "/api/addPart.php",
+    url: "https://web-a-thon.000webhostapp.com/addPart.php",
     headers: { 'content-type': 'application/json' },
     data: teamMember
   }).then(data=>setApiMessage(data.data))
@@ -25,6 +26,7 @@ const submit=(event)=>{
   team.push({
     team: teamName,
     name: event.target.name.value,
+    prob: problem,
     roll: event.target.roll.value,
     phone: event.target.phn.value,
     mail: event.target.mail.value,
@@ -46,7 +48,9 @@ const handleteam=(e)=>{
     setTeamName(e.target.value)
 }
 
-  
+  const probst=(e)=>{
+    setproblem(e.target.value)
+  }
 
     const handleChange=(e)=>{
         setMemNum(e.target.value)
@@ -55,6 +59,7 @@ const handleteam=(e)=>{
          
         console.log(memNum)
     }
+    console.log(problem)
     if(apiMessage===""){
     return(
    
@@ -88,8 +93,13 @@ const handleteam=(e)=>{
     </Col>
     <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
+<<<<<<< HEAD
     <Form.Label><h5> Problrm Statement Code</h5></Form.Label>
     <Form.Control as="select"  name ="ps">
+=======
+    <Form.Label><h4> PROBLEM STATEMENT CODE</h4></Form.Label>
+    <Form.Control as="select" onChange={probst.bind(this)}>
+>>>>>>> 66a072694e5acd5a3dcd708430676dd2e4ef711d
     <option >CODE</option>
     <option value="G001">G001</option>
     <option value="G002">G002</option>
@@ -245,11 +255,18 @@ const handleteam=(e)=>{
   </Button>
 </Form>)
     for (let i = 0; i < memNum; i++) {
-   
+   if(i==0){
      data.push( <fieldset style={{border:"2px solid white",marginBottom:"50px", width:"100%"}}>
-      <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i+1} DETAILS</legend>
+      <legend style={{textAlign:"center",width:"auto"}}>LEADER DETAILS</legend>
       {form}
-    </fieldset> )  
+    </fieldset> )
+   }
+       else{
+        data.push( <fieldset style={{border:"2px solid white",marginBottom:"50px", width:"100%"}}>
+        <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i+1} DETAILS</legend>
+        {form}
+      </fieldset> )
+       }
             
         }
         return data
