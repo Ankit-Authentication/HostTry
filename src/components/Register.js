@@ -1,6 +1,7 @@
 import React ,{Fragment,useState} from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios"
+import Counter from "./Counter";
 import { Form,Button ,Container,Row,Col} from "react-bootstrap";
 const Register=()=>{
 const [teamName, setTeamName]= useState()
@@ -84,7 +85,23 @@ const handleteam=(e)=>{
     return(
    
         
-        <Container className= "refi" style={{color:"#fff"}}>
+        <Container className = "register" style={{color:"#fff"}}>
+          <Row style={{width:"100%"}}>
+            
+            <Col lg={4} md={4} sm={12}>
+           <h2>REGISTRATION ENDS IN :</h2>
+             
+            </Col>
+          
+          </Row>
+          <Row style={{width:"100%"}}>
+            
+            <Col lg={4} md={4} sm={12}>
+         <Counter/>
+             
+            </Col>
+          
+          </Row>
             <h1 style={{textAlign:"center",margin:"50px"}}>REGISTER YOUR TEAM</h1>
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
@@ -109,8 +126,8 @@ const handleteam=(e)=>{
      </Form.Control>
     
   </Form.Group>
-
-    </Col>
+</Col>
+  
     <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
     <Form.Label><h5> Problem statement</h5></Form.Label>
