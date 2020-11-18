@@ -33,7 +33,7 @@ const Navbars = props => {
       <Nav.Link as={NavLink} to="/register" className="link">Register</Nav.Link>
       <Nav.Link as={NavLink} to="/problemStatement" className="link">Problem Statement</Nav.Link>
       <Nav.Link as={NavLink} to="/faq" className="link">FAQ</Nav.Link>
-      <Nav.Link as={NavLink} to="/team" className="link">Teams</Nav.Link>
+      <Nav.Link as={NavLink} to="/team" className="link">Team</Nav.Link>
     </Nav>
     
   </Navbar.Collapse>

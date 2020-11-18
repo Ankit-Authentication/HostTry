@@ -68,7 +68,35 @@ return(<Fragment>
     </Col>
     
   </Row>
-  
+  <Row>
+      <Col style={{ maxWidth: "40rem"  }}>
+        <Card style={{  backgroundColor:"transparent" }}>
+          <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/dir.jpg" />
+          <Card.Body cascade className="text-left" >
+            <Card.Title className = " "><h3>From the desk of Director</h3></Card.Title>
+            <Card.Text className ="info" sytle ={{color:"black"}} > <h3>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 
+        I wish the WEB-A-THON great success. 
+        I hope you have a good time and opportunity to connect with experts from the scientific 
+        community and influential entrepreneurs from industries."</h3>
+        <h4 style={{textAlign:"center"}}>- Dr. Aman Aggarwal<br/></h4>
+        </Card.Text>
+           
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col style={{ maxWidth: "40rem" ,  paddingLeft : "10px" }}>
+        <Card style={{  backgroundColor:"black" }}>
+          <Card.Img cascade style={{ height: '20rem' }} src="/images/dir.jpg" />
+          <Card.Body cascade className="text-left" >
+            <Card.Title className = " ">My adventure</Card.Title>
+            <h5 ><strong>Photography</strong></h5>
+            <Card.Text sytle ={{color:"black"}} > Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam.</Card.Text>
+           
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
   <Row style={{width:"100%",marginTop:"100px"}}>
   
   <Col xl={6} md={6} sm={12}>
