@@ -28,13 +28,13 @@ const Home=()=>{
    }
 return(<Fragment>
   <Container style={{color:"white",marginTop:"30px",textAlign:"center"}} fluid>
-  <h2>GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h2>
+  <h1 style ={{fontSize:"50px" , fontFamily: 'Montserrat'}} >GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h1>
   <h5 style={{color:"#ccccff"}}>presents</h5>
   <Row style={{width:"100%"}}>
     <Col lg={6} md={7} sm={12} style={{color:"white",marginTop:"30px",textAlign:"center"}} data-aos="fade-down">
     
       
-     <h1 style={{color:"#f1c40f"}}>WEB-A-THON</h1>
+     <h1 style={{color:"#f1c40f",  fontFamily: 'Montserrat'}}>WEB-A-THON</h1>
      <h3 style={{textAlign:"center"}} >(A NATIONAL LEVEL VIRTUAL-HACKATHON)</h3>
      <h5>ON</h5> <br/>
      <h1>18-19 DECEMBER 2020</h1> <br/>
@@ -43,13 +43,12 @@ return(<Fragment>
     <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
   <section class="section">
-  <h1 className="data" style={{fontSize:"60px"}}>WEB-A-THON??</h1>
+  <h1 className="data" style={{fontSize:"60px" , fontFamily: 'Montserrat'}}>WEB-A-THON??</h1>
 <p className="p">As the very name suggests in hackathon we try to use tech to hack into real world problem to solve them better. It's a 24–72 hours product making competition where every team needs to develop a product from scratch during those pretty hours. A team size can vary from 2–6 depending on the organization who is organizing it. </p>
 <p className="p"> This WEB-A-THON is usually a coding competition that can last upto 48 hours where software programmers, developers, designers, etc. come together to build and design something innovative and productive.</p>
  
 <p className="p">The WEB-A-THON is a virtual national-level hackathon in which you will be provided with a set of real-life problems and you have to provide a solution for the same. It is a great platform to showcase your hidden talent and skills.</p>
 
-<p className="p">It doesn't matter if someone is still making their first app or their 100th one. There are a lot of things to learn. The only constraint is time.</p>
 </section>
 
 {/* <Row style={{width:"100%",marginTop:"100px"}}>
@@ -108,10 +107,12 @@ Ganga Group of Institutions)</h3>
       </Col>
      
     </Row>
+    <Row>
+    <h1 className = "ogb" style={{fontSize:"40px",color:"#f1c40f"}}>ORGANISED BY </h1>
+    </Row>
   <Row style={{width:"100%",marginTop:"100px"}}>
-  
   <Col xl={6} md={6} sm={12}>
-  <h1 style={{fontSize:"40px",color:"#f1c40f"}}>ORGANISED BY </h1>
+  
     <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
   <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto"}}/>
   <Card.Body>
@@ -123,7 +124,6 @@ Ganga Group of Institutions)</h3>
   
 </Card></Col>
     <Col xl={6} md={6} sm={12} onClick={click}>
-    <h1  style={{fontSize:"40px",color:"#f1c40f" }}>SPONSORED BY</h1>
    <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
   <Card.Img variant="top" src="/images/gitam-logo.png" style={{width:"35%",margin:"auto"}}/>
   <Card.Body>

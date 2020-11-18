@@ -90,9 +90,8 @@ margin:auto;
   }
   button:disabled,
 button[disabled]{
+opacity:1px;
 display: none;
-
-
 }
   @media (max-width: 1000px){
    th{
