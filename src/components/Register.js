@@ -9,16 +9,37 @@ const[memNum,setMemNum]=useState()
 const [disable,setdisable]=useState(true)
 const [teamMember,setTeamMember]=useState()
 const [apiMessage,setApiMessage]=useState("")
+const [problem,setproblem]=useState()
 const team=[]
 const submitTeam=()=>{
   console.log(teamMember)
   setdisable(true)
-  axios({
-    method: 'POST',
-    url: "/api/addPart.php",
-    headers: { 'content-type': 'application/json' },
-    data: teamMember
-  }).then(data=>setApiMessage(data.data))
+//   var xmlhttp = new XMLHttpRequest();
+// xmlhttp.open("POST", 'http://web-a-thon.000webhostapp.com/addPart.php');
+// xmlhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+// xmlhttp.send(JSON.stringify(teamMember));
+// console.log(XMLHttpRequest.response)
+axios.post('https://web-a-thon.000webhostapp.com/addPart.php', JSON.stringify(teamMember))
+.then(function (response) {
+  console.log(response);
+})
+.catch(function (error) {
+  console.log(error);
+});
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json',
+//     cache: "no-store",
+//     'Cache-Control': 'no-cache'
+  
+//   },
+//     body: JSON.stringify(teamMember)
+// };
+// fetch('https://web-a-thon.000webhostapp.com/addPart.php', requestOptions)
+//     .then(response => 
+//      response.json()
+//     ).then(data=>console.log(data))
+ 
 }
 const submit=(event)=>{
   event.preventDefault()
@@ -26,6 +47,7 @@ const submit=(event)=>{
   team.push({
     team: teamName,
     name: event.target.name.value,
+    prob: problem,
     roll: event.target.roll.value,
     phone: event.target.phn.value,
     mail: event.target.mail.value,
@@ -47,7 +69,9 @@ const handleteam=(e)=>{
     setTeamName(e.target.value)
 }
 
-  
+  const probst=(e)=>{
+    setproblem(e.target.value)
+  }
 
     const handleChange=(e)=>{
         setMemNum(e.target.value)
@@ -56,6 +80,7 @@ const handleteam=(e)=>{
          
         console.log(memNum)
     }
+    console.log(problem)
     if(apiMessage===""){
     return(
    
@@ -83,7 +108,7 @@ const handleteam=(e)=>{
             
     <Col lg={4} md={4} sm={12}>
     <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4> TEAM NAME</h4></Form.Label>
+    <Form.Label><h5> Team Name</h5></Form.Label>
     <Form.Control type="text" onChange={handleteam.bind(this)} placeholder="Enter Team Name" />
     
   </Form.Group>
@@ -91,9 +116,9 @@ const handleteam=(e)=>{
     </Col>
     <Col lg={3} md={3} sm={12}>
         <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4> TEAM SIZE</h4></Form.Label>
+    <Form.Label><h5> Team Size</h5></Form.Label>
     <Form.Control as="select"  onChange={handleChange.bind(this)}>
-    <option >TEAM SIZE</option>
+    <option >Team Size</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
@@ -105,8 +130,8 @@ const handleteam=(e)=>{
   
     <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
-    <Form.Label><h4> PROBLEM STATEMENT CODE</h4></Form.Label>
-    <Form.Control as="select"  name ="ps">
+    <Form.Label><h5> Problem statement</h5></Form.Label>
+    <Form.Control as="select" onChange={probst.bind(this)}>
     <option >CODE</option>
     <option value="G001">G001</option>
     <option value="G002">G002</option>
@@ -262,11 +287,18 @@ const handleteam=(e)=>{
   </Button>
 </Form>)
     for (let i = 0; i < memNum; i++) {
-   
+   if(i==0){
      data.push( <fieldset style={{border:"2px solid white",marginBottom:"50px", width:"100%"}}>
-      <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i+1} DETAILS</legend>
+      <legend style={{textAlign:"center",width:"auto"}}>LEADER DETAILS</legend>
       {form}
-    </fieldset> )  
+    </fieldset> )
+   }
+       else{
+        data.push( <fieldset style={{border:"2px solid white",marginBottom:"50px", width:"100%"}}>
+        <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i+1} DETAILS</legend>
+        {form}
+      </fieldset> )
+       }
             
         }
         return data
