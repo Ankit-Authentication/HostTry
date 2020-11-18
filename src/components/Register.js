@@ -101,19 +101,7 @@ const handleteam=(e)=>{
   </Form.Group>
      
     </Col>
-    <Col lg={3} md={3} sm={12}>
-        <Form.Group controlId="formBasicEmail">
-    <Form.Label><h5> Team Size</h5></Form.Label>
-    <Form.Control as="select"  onChange={handleChange.bind(this)}>
-    <option >Team Size</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-     </Form.Control>
     
-  </Form.Group>
-</Col>
   
     <Col lg={5} md={5} sm={12}>
         <Form.Group controlId="formBasicEmail">
@@ -175,7 +163,19 @@ const handleteam=(e)=>{
 
             </Col>
 
-   
+            <Col lg={3} md={3} sm={12}>
+        <Form.Group controlId="formBasicEmail">
+    <Form.Label><h5> Team Size</h5></Form.Label>
+    <Form.Control as="select"  onChange={handleChange.bind(this)}>
+    <option >Team Size</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+     </Form.Control>
+    
+  </Form.Group>
+</Col>
   </Row>
 </Form>
 
