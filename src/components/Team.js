@@ -18,7 +18,8 @@ const Team=()=>{
             name:"MAHESH KUMAR",
             title: "Faculty Coordinator",
             image:"/Team/maheshsir.jpeg",
-            social:<button className="button" onClick={event =>  window.location.href='https://www.facebook.com/mahesh.malkani.796'}>Visit Profile</button>
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-mail' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100021723864058'}></i> &emsp;<i class='fa fa-mail' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/arihantjain812000?r=nametag'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true' onClick={event => window.location.href='https://www.linkedin.com/in/arihant-jain-8642881a6'}></i>&emsp;</h2>
+ 
         },
         {
             
