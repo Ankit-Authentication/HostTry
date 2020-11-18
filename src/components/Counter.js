@@ -1,10 +1,14 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useState} from 'react';
 // import  Timer from "time-counter ";
 import './Counter.css'
 
 const Counter=()=>{
-
-    var countDownDate = new Date ("Dec 10,2020 00:00:00").getTime();
+    const [day,setDay]=useState()
+    const [hour,sethour]=useState()
+    const [min,setmin]=useState()
+    const [sec,setsec]=useState()
+    const fun=()=>{
+         var countDownDate = new Date ("Dec 10,2020 00:00:00").getTime();
     var x = setInterval(function(){
         var now = new Date().getTime();
         var dd = countDownDate - now;
@@ -15,35 +19,42 @@ const Counter=()=>{
         var seconds = Math.floor((dd%(1000*60))/1000);
 
         // document.querySelector(".timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
+       setDay(days)
+       sethour(hours)
+       setmin(minutes)
+       setsec(seconds)
 
         if(dd <= 0){
             clearInterval(x);
         }
         },1000);
+    }
 
-return(<div className="container">
+useEffect(()=>{
+fun()
+   
+},1000)
+    
+
+return(<div className="containercounter">
         <div className ="count">
             <div className="countd">
-                <span id ="days">00</span>
+<span id ="days">{day}</span>
                 DAYS
             </div>
     
             <div class="countd">
-                <span id ="hours">00</span>
+                <span id ="hours">{hour}</span>
                 HOURS
             </div>
     
             <div class="countd">
-                <span id ="minutes">00</span>
+                <span id ="minutes">{min}</span>
                 MINUTES
             </div>
     
             <div class="countd">
-                <span id ="seconds">00</span>
+                <span id ="seconds">{sec}</span>
                 SECONDS
             </div>
         </div>
