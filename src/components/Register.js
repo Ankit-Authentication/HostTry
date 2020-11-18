@@ -73,20 +73,25 @@ const handleteam=(e)=>{
         <Container className = "register" style={{color:"#fff"}}>
           <Row style={{width:"100%"}}>
             
-            <Col lg={4} md={4} sm={12}>
-           <h2>REGISTRATION ENDS IN :</h2>
+            <Col lg={12} md={12} sm={12}>
+            <h2>REGISTRATION ENDS IN :</h2>
              
             </Col>
-          
-          </Row>
-          <Row style={{width:"100%"}}>
+            <Col lg={12} md={12} sm={12}>
+            <Counter/>
+            </Col>
             
-            <Col lg={4} md={4} sm={12}>
-         <Counter/>
-             
-            </Col>
-          
           </Row>
+         
+           
+             
+          
+            
+        
+             
+            
+          
+          
             <h1 style={{textAlign:"center",margin:"50px"}}>REGISTER YOUR TEAM</h1>
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
