@@ -36,7 +36,8 @@ fun()
 },1000)
     
 
-return(<div className="containercounter">
+return(
+<div className="containercounter">
         <div className ="count">
             <div className="countd">
 <span id ="days">{day}</span>

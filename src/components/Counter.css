@@ -27,9 +27,9 @@
     width: 80px;
     height: 80px;
     border:5px solid;
-    margin :0 30px;
+    margin :0 10px;
     font-size: 12px;
-    
+   border-radius: 50%; 
     overflow: hidden;
 
 }
@@ -37,5 +37,5 @@
 .countd span{
     display: block;
     font-size: 26px;
-    margin-top:14px;
+    margin-top:4px;
 }

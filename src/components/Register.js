@@ -2,6 +2,7 @@ import React ,{Fragment,useState} from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios"
 import Counter from "./Counter";
+import './Home.css';
 import { Form,Button ,Container,Row,Col} from "react-bootstrap";
 const Register=()=>{
 const [teamName, setTeamName]= useState()
@@ -71,19 +72,30 @@ const handleteam=(e)=>{
    
         
         <Container className = "register" style={{color:"#fff"}}>
-          <Row style={{width:"100%"}}>
+          {/* <Row style={{width:"100%"}}>
             
-            <Col lg={12} md={12} sm={12}>
+            <Col lg={6} md={6} sm={12}>
             <h2 style ={{display:"flex", alignItems: "center" , justifyContent: "center", marginTop :"50px"}}>REGISTRATION ENDS IN :</h2>
-             
+             <Counter/>
             </Col>
-            <Col lg={12} md={12} sm={12}>
-            <Counter/>
+            <Col lg={6} md={6} sm={12}>
+            
             </Col>
-          </Row>
-         
+          </Row> */}
+          <Row style={{width:"100%"}}>
+    <Col lg={6} md={7} sm={12} style={{color:"white",marginTop:"30px",textAlign:"center"}}>
+    
+      
+     <h1 style={{color:"#f1c40f"}}>WEB-A-THON</h1>
+     <h3 style={{textAlign:"center"}} >(A NATIONAL LEVEL VIRTUAL-HACKATHON)</h3>
+    
+     <h2>Registration Ends in:</h2> 
+     <Counter/>
+    </Col>
+    <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image"></img></Col>
+  </Row>
            
-             
+  <section class="section" style={{marginTop:"-600px"}}>   
           
             
         
@@ -293,6 +305,7 @@ const handleteam=(e)=>{
 <Button variant="primary" onClick={submitTeam} disabled={disable}>
     SUBMIT TEAM
   </Button>
+  </section>
         </Container>
   
   
