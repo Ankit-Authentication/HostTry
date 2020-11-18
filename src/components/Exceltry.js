@@ -9,6 +9,7 @@ import './Problem.css'
 
 const ProblemStatements=()=>{
   var [probl,setProb]=useState([])
+  var [disable,setDisable]=useState(false)
   var [problem,setProblem]=useState([])
   // const [value,setValue]=useState("all")
       
@@ -35,6 +36,7 @@ var datap=[]
 console.log(datap)
 if(value=="all"){
   datap=probles
+  setDisable(false)
 }
 else{
  probles.forEach((element,index) => {
@@ -42,6 +44,7 @@ else{
    if(element['DOMAIN']==value){
 console.log(element)
 datap.push(element)
+setDisable(true)
    }
   else{
     
@@ -187,19 +190,19 @@ change(event.target.value)
         <button onClick={() => previousPage()} disabled={!canPreviousPage} >
           {'<'}
         </button>{' '}
-        <button className='number' onClick={() => gotoPage(0)} >
+        <button className='number' onClick={() => gotoPage(0)} disabled={disable}>
           {'1'}
         </button>
-        <button className='number' onClick={() => gotoPage(1)} >
+        <button className='number' onClick={() => gotoPage(1)} disabled={disable}>
           {'2'}
         </button>
-        <button className='number' onClick={() => gotoPage(2)} >
+        <button className='number' onClick={() => gotoPage(2)} disabled={disable}>
           {'3'}
         </button>
-        <button className='number' onClick={() => gotoPage(3)} >
+        <button className='number' onClick={() => gotoPage(3)} disabled={disable}>
           {'4'}
         </button>
-        <button className='number' onClick={() => gotoPage(4)} >
+        <button className='number' onClick={() => gotoPage(4)} disabled={disable}>
           {'5'}
         </button>
          
