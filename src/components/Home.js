@@ -34,7 +34,7 @@ return(<Fragment>
     <Col lg={6} md={7} sm={12} style={{color:"white",marginTop:"30px",textAlign:"center"}} data-aos="fade-down">
     
       
-     <h1 style={{color:"#f1c40f",  fontFamily: 'Montserrat'}}>WEB-A-THON</h1>
+     <h1 style={{color:"#f1c40f"}}  className="web">WEB-A-THON</h1>
      <h3 style={{textAlign:"center"}} >(A NATIONAL LEVEL VIRTUAL-HACKATHON)</h3>
      <h5>ON</h5> <br/>
      <h1>18-19 DECEMBER 2020</h1> <br/>
@@ -43,7 +43,7 @@ return(<Fragment>
     <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
   <section class="section">
-  <h1 className="data" style={{fontSize:"60px" , fontFamily: 'Montserrat'}}>WEB-A-THON??</h1>
+  <h1 className="data web" style={{fontSize:"60px" }}>WEB-A-THON??</h1>
 <p className="p">As the very name suggests in hackathon we try to use tech to hack into real world problem to solve them better. It's a 24–72 hours product making competition where every team needs to develop a product from scratch during those pretty hours. A team size can vary from 2–6 depending on the organization who is organizing it. </p>
 <p className="p"> This WEB-A-THON is usually a coding competition that can last upto 48 hours where software programmers, developers, designers, etc. come together to build and design something innovative and productive.</p>
  
@@ -78,11 +78,11 @@ return(<Fragment>
             
             <Card.Text  sytle ={{color:"black"}} > <p>"WEB-A-THON focuses on the National and International Industrial needs and also
                encourages students to work hard in this direction to provide technical solutions.We motivate students to excel in all
-                spheres of Technical and Management education.
+                spheres of Technical and Managerial skills.
 
 I wish all a successful life ahead."</p>
         <h4 style={{textAlign:"right"}}>-Mr. Bharat Gupta<br/></h4>
-        <h3 style={{textAlign:"right"}}>(Chairman
+        <h3 style={{textAlign:"right"}}>(Chairman, 
 Ganga Group of Institutions)</h3>
         </Card.Text>
            
@@ -118,7 +118,7 @@ Ganga Group of Institutions)</h3>
         I hope you have a good time and opportunity to connect with experts from the scientific 
         community and influential entrepreneurs from industries."</p>
         <h4 style={{textAlign:"right"}}>- Dr. Aman Aggarwal<br/></h4>
-        <h3 style={{textAlign:"right"}}>(GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT)</h3>
+        <h3 style={{textAlign:"right"}}>(Director , Ganga Institute Of Technology And Management)</h3>
         </Card.Text>
 
             {/* <Card.Text  sytle ={{color:"black"}} > <h3>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 

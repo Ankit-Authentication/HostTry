@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Goldman:wght@700&family=Stalinist+One&display=swap');
   .flexitem{
       display:flex;
       flex-direction: row;
@@ -15,6 +15,10 @@
     font-size:60px;
     font-weight:900;
     font-family: "ui-rounded";
+  }
+  .web{
+    font-family: 'Stalinist One', cursive;
+    letter-spacing: 3px;
   }
   .image{
     height:40%;
