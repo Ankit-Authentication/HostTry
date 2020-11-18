@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Goldman:wght@700&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
   .flexitem{
       display:flex;
       flex-direction: row;
@@ -17,8 +18,9 @@
     font-family: "ui-rounded";
   }
   .web{
-    font-family: 'Stalinist One', cursive;
-    letter-spacing: 3px;
+    font-family: "ui-rounded";
+    font-size: 60px;
+    font-weight: 900;
   }
   .image{
     height:40%;
@@ -36,7 +38,7 @@
     /* background-color: rgb(228, 74, 47); */
     background: transparent;
     border-radius: 25px;
-width:50%;
+    width:50%;
     font-size: 30px;
     
     border:5px inset #f1c40f;
@@ -80,6 +82,7 @@ width:50%;
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-top: 30px;
 }
 .cliens {
   padding: 25px 0;
@@ -88,7 +91,7 @@ width:50%;
 }
 
 .cliens img {
-  max-width: 85%;
+  max-width: 50%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -97,7 +100,7 @@ width:50%;
 .cliens img:hover {
   -webkit-filter: none;
   filter: none;
-  transform: scale(1.8);
+  transform: scale(1.6);
 }
 
 @media (max-width: 768px) {

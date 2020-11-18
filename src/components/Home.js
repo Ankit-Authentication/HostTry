@@ -28,7 +28,7 @@ const Home=()=>{
    }
 return(<Fragment>
   <Container style={{color:"white",marginTop:"30px",textAlign:"center"}} fluid>
-  <h1 style ={{fontSize:"50px" , fontFamily: 'Montserrat'}} >GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h1>
+  <h1 style ={{fontSize:"50px" , fontFamily: 'Rye'}} >GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h1>
   <h5 style={{color:"#ccccff"}}>presents</h5>
   <Row style={{width:"100%"}}>
     <Col lg={6} md={7} sm={12} style={{color:"white",marginTop:"30px",textAlign:"center"}} data-aos="fade-down">
@@ -43,8 +43,8 @@ return(<Fragment>
     <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
   <section class="section">
-  <h1 className="data web" style={{fontSize:"60px" }}>WEB-A-THON??</h1>
-<p className="p">As the very name suggests in hackathon we try to use tech to hack into real world problem to solve them better. It's a 24–72 hours product making competition where every team needs to develop a product from scratch during those pretty hours. A team size can vary from 2–6 depending on the organization who is organizing it. </p>
+  <h1 className="data" style={{fontSize:"60px" }}>WEB-A-THON??</h1>
+<p className="p">In this hackathon, we try to use web to hack into real world problem to solve them better. It's a 24–72 hours product making competition where every team needs to develop a product from scratch during those pretty hours. A team size can vary from 2–6 depending on the organization who is organizing it. </p>
 <p className="p"> This WEB-A-THON is usually a coding competition that can last upto 48 hours where software programmers, developers, designers, etc. come together to build and design something innovative and productive.</p>
  
 <p className="p">The WEB-A-THON is a virtual national-level hackathon in which you will be provided with a set of real-life problems and you have to provide a solution for the same. It is a great platform to showcase your hidden talent and skills.</p>
@@ -77,7 +77,7 @@ return(<Fragment>
           <Card.Body cascade className="text-left" >
             
             <Card.Text  sytle ={{color:"black"}} > <p>"WEB-A-THON focuses on the National and International Industrial needs and also
-               encourages students to work hard in this direction to provide technical solutions.We motivate students to excel in all
+               encourages students to work hard in this direction to provide technical solutions. We motivate students to excel in all
                 spheres of Technical and Managerial skills.
 
 I wish all a successful life ahead."</p>
@@ -115,9 +115,9 @@ Ganga Group of Institutions)</h3>
           <Card.Body cascade className="text-left" >
           <Card.Text  sytle ={{color:"black"}} > <p>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 
         I wish the WEB-A-THON great success. 
-        I hope you have a good time and opportunity to connect with experts from the scientific 
-        community and influential entrepreneurs from industries."</p>
-        <h4 style={{textAlign:"right"}}>- Dr. Aman Aggarwal<br/></h4>
+        I hope you have a good time and opportunity to connect with experts from the academic 
+        community."</p>
+        <h4 style={{textAlign:"right"}}>-Prof.(Dr.) Aman Aggarwal<br/></h4>
         <h3 style={{textAlign:"right"}}>(Director , Ganga Institute Of Technology And Management)</h3>
         </Card.Text>
 
@@ -137,11 +137,12 @@ Ganga Group of Institutions)</h3>
     <Row>
     <h1 className = "ogb" style={{fontSize:"40px",color:"#f1c40f"}}>ORGANISED BY </h1>
     </Row>
-  <Row style={{width:"100%",marginTop:"100px"}}>
+  <Row style={{width:"100%",marginTop:"50px"}}>
+    
   <Col xl={6} md={6} sm={12}>
   
     <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
-  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto" , color:"brown"}}/>
+  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto" , color:"brown",backgroundColor:"#8080ff",borderRadius:"50%",padding:"20px"}}/>
   <Card.Body>
     <Card.Title>APPTECHTELL</Card.Title>
     <Card.Text>
@@ -177,26 +178,28 @@ Ganga Group of Institutions)</h3>
             <img src="/images/logos/webtek.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src="/images/logos/iant.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src="/images/logos/myweb.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src="/images/logos/avinfosys.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src="/images/logos/aptron_logo.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/images/logos/hcllogo.png" class="img-fluid" alt=""/>
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/hcllogo.png" class="img-fluid" alt="" style={{maxWidth:"80%"}}/>
           </div>
-
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="/images/logos/spektra.jpeg" class="img-fluid" alt=""/>
+          </div>
         </div>
 
       </div>

@@ -31,7 +31,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-1">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: APPTECHTELL @ <a href="https://www.gangainstitute.com/" style={{color:"white"}}> GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT </a>
+          &copy; {new Date().getFullYear()} Copyright: APPTECHTELL @ <a href="https://www.gangainstitute.com/" style={{color:"white",fontSize:"15px"}}> Ganga Institute Of Technology And Management </a>
         </MDBContainer>
       </div>
     </MDBFooter>

@@ -8,17 +8,17 @@ const Team=()=>{
     const info=[
         {
             
-            name:"Dr.NEETU SHARMA",
+            name:"Prof.(Dr.) NEETU SHARMA",
             title: "Organiser",
             image:"/Team/neetumam1.jpeg",
-            social:<button className="button" onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100056394836125'}>Visit Profile</button>
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%",fontSize:"15px"}}><i class='fa fa-envelope' aria-hidden='true'></i> &emsp;hod.cse@gangainstitute.com</h2>
         },
         {
            
-            name:"MAHESH KUMAR",
+            name:"Er. MAHESH KUMAR",
             title: "Faculty Coordinator",
             image:"/Team/maheshsir.jpeg",
-            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-mail' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/profile.php?id=100021723864058'}></i> &emsp;<i class='fa fa-mail' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/arihantjain812000?r=nametag'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true' onClick={event => window.location.href='https://www.linkedin.com/in/arihant-jain-8642881a6'}></i>&emsp;</h2>
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%",fontSize:"15px"}}><i class='fa fa-envelope' aria-hidden='true'></i> &emsp;mahesh.cse@gangainstitute.com</h2>
  
         },
         {
@@ -30,7 +30,7 @@ const Team=()=>{
         },
         {
            name:"DEEPANSHI JAIN",
-             title: "Cultural head",
+             title: "Cultural Head",
              image:"/Team/deepanshi.jpeg",
              social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%"}}><i class='fa fa-facebook' aria-hidden='true' onClick={event =>  window.location.href='https://www.facebook.com/deepanshi.jain.10/'}></i> &emsp;<i class='fa fa-instagram' aria-hidden='true' onClick={event =>  window.location.href='https://www.instagram.com/deepanshi.jain.10/'}></i> &emsp;<i class='fa fa-linkedin' aria-hidden='true'  onClick={event => window.location.href='https://www.linkedin.com/in/deepanshi-jain-090a3a1a6/'}></i>&emsp;</h2>
         },

@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react';
 // import  Timer from "time-counter ";
 import './Counter.css'
+import { Container,Row,Col, Card} from "react-bootstrap";
 
 const Counter=()=>{
     const [day,setDay]=useState()
@@ -37,29 +38,35 @@ fun()
     
 
 return(
-<div className="containercounter">
-        <div className ="count">
-            <div className="countd">
+<Container style={{color:"white",marginTop:"50px",textAlign:"center"}} fluid>
+    <Row style={{width:"100%"}}>
+        <Col lg={3} md={3} sm={3} xs={3}>
+        <div className="countd">
 <span id ="days">{day}</span>
                 DAYS
             </div>
-    
-            <div class="countd">
+        </Col>
+        <Col lg={3} md={3} sm={3} xs={3}>
+        <div class="countd">
                 <span id ="hours">{hour}</span>
                 HOURS
             </div>
-    
-            <div class="countd">
+        </Col>
+        <Col lg={3} md={3} sm={3} xs={3}>
+        <div class="countd">
                 <span id ="minutes">{min}</span>
                 MINUTES
             </div>
-    
-            <div class="countd">
+        </Col>
+        <Col lg={3} md={3} sm={3} xs={3}>
+        <div class="countd">
                 <span id ="seconds">{sec}</span>
                 SECONDS
             </div>
-        </div>
-    </div>)
+        </Col>
+    </Row>
+        
+    </Container>)
  
       
 }

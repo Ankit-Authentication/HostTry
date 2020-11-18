@@ -72,7 +72,7 @@ const handleteam=(e)=>{
         
         <Container className = "register" style={{color:"#fff"}}>
          
-            <h2 style ={{display:"flex", alignItems: "center" , justifyContent: "center", marginTop :"50px"}}>REGISTRATION ENDS IN :</h2>
+            <h2 style ={{display:"flex", alignItems: "center" , justifyContent: "center", marginTop :"50px",color:"#f1c40f"}}>REGISTRATION ENDS IN :</h2>
              <Counter/>
            
            
@@ -82,7 +82,7 @@ const handleteam=(e)=>{
         
              
             
-            <h1 style={{textAlign:"center",margin:"50px"}}>REGISTER YOUR TEAM</h1>
+            <h1 style={{textAlign:"center",margin:"50px",color:"#f1c40f"}}>REGISTER YOUR TEAM</h1>
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
             
@@ -275,7 +275,7 @@ const handleteam=(e)=>{
    }
        else{
         data.push( <fieldset style={{border:"2px solid white",marginBottom:"50px", width:"100%"}}>
-        <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i+1} DETAILS</legend>
+        <legend style={{textAlign:"center",width:"auto"}}>MEMBER {i} DETAILS</legend>
         {form}
       </fieldset> )
        }
@@ -311,7 +311,7 @@ else{
     <Fragment>
        
           <img src="/images/robot.png"  style={{width:"30%",color:"white",display:"block",margin:"auto",padding:"30px"}}/>
-       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>OOPS!!!<br/>Some error has occured.<br/> Please try again or Contact us on our Mail Id :<br/> apptechtell@gmail.com</h1>
+       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>OOPS!!!<br/>Some error has occured.<br/> Please try again or Contact us on our Mail Id :<br/> apptechtell@gmail.com<br/>or call at : 9518407256</h1>
     
       
         
