@@ -60,7 +60,7 @@ const GetStatement=(row,column)=>{
 // console.log(row.cell.row.original)
     return (
       <>
-        <p onClick={() => setModalShow(true)} style={{fontSize:"10px",cursor:"pointer"}}>
+        <p onClick={() => setModalShow(true)} style={{fontSize:"15px",cursor:"pointer"}}>
           Click for complete description
         </p>
   

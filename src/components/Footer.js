@@ -18,7 +18,7 @@ const Footer = () => {
           </MDBCol>
           <MDBCol md="4" style={{color:"#fff" , textAlign:"center", marginTop: "25px"}}>
               <h5 style={{color:"black"}}>ABOUT US</h5>
-          <p>With a mission to improve lives through learning, connecting people and ideas . Also to create skilled software engineers for our country & the world .</p>
+          <p>With a mission to improve lives through learning, connecting people and ideas . Also to create skilled Software Engineers for our country & the world .</p>
           </MDBCol>
           <MDBCol md="4" style={{color:"#fff", textAlign:"center" , marginTop: "25px"}}>
             <h5 className="title" style={{color:"black"}}>Get in touch with us</h5>

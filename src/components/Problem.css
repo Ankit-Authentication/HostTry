@@ -94,7 +94,7 @@ opacity:1px;
 display: none;
 }
   @media (max-width: 1000px){
-   th{
+   /* th{
        
        font-size: 10px;
       
@@ -102,7 +102,7 @@ display: none;
  
    td{
 font-size: 10px;
-   }
+   } */
   
    
 }

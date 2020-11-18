@@ -40,12 +40,12 @@ const Schedule=()=>{
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h1>
       <h4 className="vertical-timeline-element-subtitle">7:00 PM - 09:00 PM</h4>
       <p style ={{fontSize:"25px"}}> Evaluation</p>
-      <li> <b>Idea</b></li>
-      <li><b>Idea Implementation </b></li>
-      <li><b>Technicality </b></li>
-      <li><b>Level of innovation </b></li>
-      <li><b>Feasibility </b></li>
-      <li><b>Market Adaptibility </b></li>
+      <li> Idea</li>
+      <li>Idea Implementation </li>
+      <li>Technicality </li>
+      <li>Level of innovation </li>
+      <li>Feasibility </li>
+      <li>Market Adaptibility </li>
       <p  style = {{fontSize:"19px"}}>Only Top 50% teams will be qualified for next round.</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
@@ -57,11 +57,11 @@ const Schedule=()=>{
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>19-12-2020</h1>
       <h4 className="vertical-timeline-element-subtitle">12:00 PM - 2:00 PM</h4>
       <p style ={{fontSize:"25px"}}> Semi Final Round</p>
-      <li><b> Implementation </b></li>
-      <li><b>Technicality </b></li>
-      <li><b>Level of innovation </b></li>
-      <li><b>Feasibility </b></li>
-      <li><b>Market Adaptibility </b></li>
+      <li> Implementation </li>
+      <li>Technicality </li>
+      <li>Level of innovation </li>
+      <li>Feasibility </li>
+      <li>Market Adaptibility </li>
       <p  style ={{fontSize:"19px"}}>Only Top 5 teams will be qualified for next round.</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
