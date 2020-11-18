@@ -52,7 +52,7 @@ return(<Fragment>
 <p className="p">It doesn't matter if someone is still making their first app or their 100th one. There are a lot of things to learn. The only constraint is time.</p>
 </section>
 
-<Row style={{width:"100%",marginTop:"100px"}}>
+{/* <Row style={{width:"100%",marginTop:"100px"}}>
   <Col xl={4} md={12} sm={12}> <img src="/images/dir.jpg" className="imagedir" data-aos="fade-left"></img></Col>
     <Col xl={8} md={12} sm={12}>
     
@@ -67,35 +67,46 @@ return(<Fragment>
       </div>
     </Col>
     
-  </Row>
+  </Row> */}
+
   <Row>
-      <Col style={{ maxWidth: "40rem"  }}>
+  <Col style={{ maxWidth: "40rem"  }}>
+    <br/>
+      <h1 style={{fontSize:"40px",color:"#f1c40f"}}>Chairman's Message </h1><br/>
         <Card style={{  backgroundColor:"transparent" }}>
-          <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/dir.jpg" />
+          <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/chairman.jpg" />
           <Card.Body cascade className="text-left" >
-            <Card.Title className = " "><h3>From the desk of Director</h3></Card.Title>
-            <Card.Text className ="info" sytle ={{color:"black"}} > <h3>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 
-        I wish the WEB-A-THON great success. 
-        I hope you have a good time and opportunity to connect with experts from the scientific 
-        community and influential entrepreneurs from industries."</h3>
-        <h4 style={{textAlign:"center"}}>- Dr. Aman Aggarwal<br/></h4>
+            
+            <Card.Text className ="info" sytle ={{color:"black"}} > <h3>"WEB-A-THON focuses on the National and International Industrial needs and also encourages students to work hard in this direction to provide technical solutions.We motivate students to excel in all spheres of Technical and Management education. We encourage   our students to provide real life solutions and to apply the knowledge acquired in a focused manner.
+
+I wish all a successful life ahead."</h3>
+        <h4 style={{textAlign:"center"}}>-Mr. Bharat Gupta<br/></h4>
+        <h3 style={{textAlign:"center"}}>(Chairman
+Ganga Group of Institutions)</h3>
         </Card.Text>
            
           </Card.Body>
         </Card>
       </Col>
-      <Col style={{ maxWidth: "40rem" ,  paddingLeft : "10px" }}>
-        <Card style={{  backgroundColor:"black" }}>
-          <Card.Img cascade style={{ height: '20rem' }} src="/images/dir.jpg" />
+
+      <Col style={{ maxWidth: "40rem"  }}><br/>
+      <h1 style={{fontSize:"40px",color:"#f1c40f"}}>Director's Message </h1><br/>
+        <Card style={{  backgroundColor:"transparent" }}>
+          <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/dir.jpg" />
           <Card.Body cascade className="text-left" >
-            <Card.Title className = " ">My adventure</Card.Title>
-            <h5 ><strong>Photography</strong></h5>
-            <Card.Text sytle ={{color:"black"}} > Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam
-              rem aperiam.</Card.Text>
+           
+            <Card.Text className ="info" sytle ={{color:"black"}} > <h3>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 
+        I wish the WEB-A-THON great success. 
+        I hope you have a good time and opportunity to connect with experts from the scientific 
+        community and influential entrepreneurs from industries."</h3>
+        <h4 style={{textAlign:"center"}}>- Dr. Aman Aggarwal<br/></h4>
+        <h3 style={{textAlign:"center"}}>(GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT)</h3>
+        </Card.Text>
            
           </Card.Body>
         </Card>
       </Col>
+     
     </Row>
   <Row style={{width:"100%",marginTop:"100px"}}>
   

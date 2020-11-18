@@ -74,7 +74,8 @@ const handleteam=(e)=>{
           <Row style={{width:"100%"}}>
             
             <Col lg={12} md={12} sm={12}>
-            <h2 className= "counthead">REGISTRATION ENDS IN :</h2>
+            <h2 style ={{display:"flex", alignItems: "center" , justifyContent: "center", marginTop :"50px"}}>REGISTRATION ENDS IN :</h2>
+
              
             </Col>
             <Col lg={12} md={12} sm={12}>
