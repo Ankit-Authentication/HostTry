@@ -74,13 +74,12 @@ const handleteam=(e)=>{
           <Row style={{width:"100%"}}>
             
             <Col lg={12} md={12} sm={12}>
-            <h2>REGISTRATION ENDS IN :</h2>
+            <h2 className= "counthead">REGISTRATION ENDS IN :</h2>
              
             </Col>
             <Col lg={12} md={12} sm={12}>
             <Counter/>
             </Col>
-            
           </Row>
          
            
@@ -90,8 +89,6 @@ const handleteam=(e)=>{
         
              
             
-          
-          
             <h1 style={{textAlign:"center",margin:"50px"}}>REGISTER YOUR TEAM</h1>
              <Form style={{margin:"30px"}}>
         <Row style={{width:"100%"}}>
