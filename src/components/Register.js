@@ -321,7 +321,7 @@ else{
     <Fragment>
        
           <img src="/images/robot.png"  style={{width:"30%",color:"white",display:"block",margin:"auto",padding:"30px"}}/>
-       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>some error occured please try again or contact us on our mail id</h1>
+       <h1 style={{color:"#f1c40f",width:"100%",margin:"auto",textAlign:"center"}}>OOPS!!!<br/>Some error has occured.<br/> Please try again or Contact us on our Mail Id :<br/> apptechtell@gmail.com</h1>
     
       
         
