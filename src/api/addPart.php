@@ -2,8 +2,8 @@
 // error_reporting(0);
 date_default_timezone_set('Asia/Kolkata');
 header("Access-Control-Allow-Origin: *");
-// $rest_json = file_get_contents("php://input");
-// $_POST = json_decode($rest_json, true);
+$rest_json = file_get_contents("php://input");
+$_POST = json_decode($rest_json, true);
 // $servername = "localhost";
 // $username = "root";
 // $password = "";
@@ -11,8 +11,8 @@ header("Access-Control-Allow-Origin: *");
 // $flag=0;
 // // Create connection
 // $conn = new mysqli($servername, $username, $password, $dbname);
-// $index=$_POST[0];
-// $team=$index['team'];
+$index=$_POST[0];
+$team=$index['team'];
 // $problem=$index['prob'];
 // $leader=$index['name'];
 // $date=date("D M d, Y G:i");
@@ -48,5 +48,5 @@ header("Access-Control-Allow-Origin: *");
 // if($flag===1){
 //    echo "team added successfully";
 // }
-echo "hello"
+echo json_encode(["message" => $team]);
 ?>

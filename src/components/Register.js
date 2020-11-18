@@ -13,12 +13,32 @@ const team=[]
 const submitTeam=()=>{
   console.log(teamMember)
   setdisable(true)
-  axios({
-    method: 'POST',
-    url: "https://web-a-thon.000webhostapp.com/addPart.php",
-    headers: { 'content-type': 'application/json' },
-    data: teamMember
-  }).then(data=>setApiMessage(data.data))
+//   var xmlhttp = new XMLHttpRequest();
+// xmlhttp.open("POST", 'http://web-a-thon.000webhostapp.com/addPart.php');
+// xmlhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+// xmlhttp.send(JSON.stringify(teamMember));
+// console.log(XMLHttpRequest.response)
+axios.post('https://web-a-thon.000webhostapp.com/addPart.php', JSON.stringify(teamMember))
+.then(function (response) {
+  console.log(response);
+})
+.catch(function (error) {
+  console.log(error);
+});
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json',
+//     cache: "no-store",
+//     'Cache-Control': 'no-cache'
+  
+//   },
+//     body: JSON.stringify(teamMember)
+// };
+// fetch('https://web-a-thon.000webhostapp.com/addPart.php', requestOptions)
+//     .then(response => 
+//      response.json()
+//     ).then(data=>console.log(data))
+ 
 }
 const submit=(event)=>{
   event.preventDefault()
