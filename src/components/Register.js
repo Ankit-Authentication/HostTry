@@ -75,7 +75,6 @@ const handleteam=(e)=>{
             
             <Col lg={12} md={12} sm={12}>
             <h2 style ={{display:"flex", alignItems: "center" , justifyContent: "center", marginTop :"50px"}}>REGISTRATION ENDS IN :</h2>
-
              
             </Col>
             <Col lg={12} md={12} sm={12}>
