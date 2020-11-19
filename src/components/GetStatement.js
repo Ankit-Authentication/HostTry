@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import { Button,Modal ,Table } from "react-bootstrap";
 import './Problem.css'
+import './getStatement.css'
 
 function MyVerticallyCenteredModal(props) {
   // console.log("data is ",props.data)
@@ -60,7 +61,7 @@ const GetStatement=(row,column)=>{
 // console.log(row.cell.row.original)
     return (
       <>
-        <p onClick={() => setModalShow(true)} style={{fontSize:"15px",cursor:"pointer"}}>
+        <p clssName="p" onClick={() => setModalShow(true)} style={{cursor:"pointer"}}>
           Click for complete description
         </p>
   

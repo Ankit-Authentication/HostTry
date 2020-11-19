@@ -76,8 +76,8 @@ margin:auto;
       flex:auto;
       margin-bottom: 1.5rem;
       margin-top: 1.5rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
       padding:5px;
       font-weight: 500;
       color:#ffffff;
@@ -94,7 +94,7 @@ opacity:1px;
 display: none;
 }
   @media (max-width: 1000px){
-   /* th{
+   th{
        
        font-size: 10px;
       
@@ -102,7 +102,10 @@ display: none;
  
    td{
 font-size: 10px;
-   } */
+   }
   
-   
+   table{
+      margin-left: 0%;
+    
+   }
 }

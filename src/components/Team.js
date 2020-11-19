@@ -11,14 +11,14 @@ const Team=()=>{
             name:"Prof.(Dr.) NEETU SHARMA",
             title: "Organiser",
             image:"/Team/neetumam1.jpeg",
-            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%",fontSize:"15px"}}><i class='fa fa-envelope' aria-hidden='true'></i> &emsp;hod.cse@gangainstitute.com</h2>
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%",fontSize:"15px"}}><a href="mailto:hod.cse@gangainstitute.com" style={{color:"white",textDecoration:"none"}}><i class='fa fa-envelope' aria-hidden='true'></i> &emsp;hod.cse@gangainstitute.com</a></h2>
         },
         {
            
             name:"Er. MAHESH KUMAR",
             title: "Faculty Coordinator",
             image:"/Team/maheshsir.jpeg",
-            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%",fontSize:"15px"}}><i class='fa fa-envelope' aria-hidden='true'></i> &emsp;mahesh.cse@gangainstitute.com</h2>
+            social:<h2 style={{backgroundImage:"linear-gradient(to left, #2d00f7, #ff0291)",color:"white",height:"100%",fontSize:"15px"}}><a href="mailto:mahesh.cse@gangainstitute.com" style={{color:"white",textDecoration:"none"}}><i class='fa fa-envelope' aria-hidden='true'></i> &emsp;mahesh.cse@gangainstitute.com</a></h2>
  
         },
         {

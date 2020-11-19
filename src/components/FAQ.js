@@ -53,7 +53,7 @@ const Faqs=()=>{
     
 return(<Fragment>
   <Container>
-  <Row style={{width:"85%"}} >
+  <Row style={{width:"100%"}} >
   
     <Col lg={12} md={12} sm={12}><img src="/images/FAQ.png" className="imagefaq" ></img></Col>
   </Row>
@@ -70,7 +70,8 @@ return(<Fragment>
           // rowContentTextSize: '15px',
           rowContentPaddingTop: '10px',
           rowContentPaddingBottom: '30px',
-          rowContentPaddingLeft: '50px',
+          rowContentPaddingLeft: '20px',
+          rowContentPaddingRight: '20px',
           arrowColor: "white",
           background:"transparent"
           }} 

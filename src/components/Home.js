@@ -40,7 +40,8 @@ return(<Fragment>
      <h1>18-19 DECEMBER 2020</h1> <br/>
      <button className="regbtn" onClick={reg}><span>Register</span></button>
     </Col>
-    <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col>
+    {/* <Col lg={3} md={3} sm={12}><img src="/images/image1.png" className="image" data-aos="fade-down"></img></Col> */}
+    <Col lg={3} md={3} sm={12}><img src="/images/image2.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
   <section class="section">
   <h1 className="data" style={{fontSize:"60px" }}>WEB-A-THON??</h1>
