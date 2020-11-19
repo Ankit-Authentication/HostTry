@@ -91,11 +91,7 @@ change(event.target.value)
     
       const columns = React.useMemo(
         () => [
-          {
-            Header: 'S.NO',
-            accessor: 'sno', // accessor is the "key" in the data
-            Cell: TableCell
-          },
+         
           {
             Header: 'CODE ',
             accessor: 'ps_code', // accessor is the "key" in the data
