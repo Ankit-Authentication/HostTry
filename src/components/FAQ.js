@@ -32,7 +32,7 @@ const Faqs=()=>{
             content: "As a participant, the biggest prize for you is the experience and learning you will gain."
           },
           {
-            title: " How much does it cost ?",
+            title: " How much does it cost?",
             content: "WEB-A-THON is absolutely free to attend!"
           },
           {
