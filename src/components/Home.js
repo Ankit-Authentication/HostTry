@@ -28,7 +28,7 @@ const Home=()=>{
    }
 return(<Fragment>
   <Container style={{color:"white",marginTop:"30px",textAlign:"center"}} fluid>
-  <h1 style ={{fontSize:"50px" , fontFamily: 'Rye'}} >GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h1>
+  <h1 style ={{fontSize:"40px" , fontFamily: 'Rye'}} >GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h1>
   <h5 style={{color:"#ccccff"}}>presents</h5>
   <Row style={{width:"100%"}}>
     <Col lg={6} md={7} sm={12} style={{color:"white",marginTop:"30px",textAlign:"center"}} data-aos="fade-down">
@@ -142,7 +142,7 @@ Ganga Group of Institutions)</h3>
   <Col xl={6} md={6} sm={12}>
   
     <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
-  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto" , color:"brown",backgroundColor:"#8080ff",borderRadius:"50%",padding:"20px"}}/>
+  <Card.Img variant="top" src="/images/apptechtell.png" style={{width:"30%",margin:"auto" , color:"brown",backgroundColor:"#8080ff",borderRadius:"50%",padding:"10px"}}/>
   <Card.Body>
     <Card.Title>APPTECHTELL</Card.Title>
     <Card.Text>

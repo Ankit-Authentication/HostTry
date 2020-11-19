@@ -40,25 +40,25 @@ fun()
 return(
 <Container style={{color:"white",marginTop:"50px",textAlign:"center"}} fluid>
     <Row style={{width:"100%"}}>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col lg={3} md={3} sm={3} xs={6}>
         <div className="countd">
 <span id ="days">{day}</span>
                 DAYS
             </div>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col lg={3} md={3} sm={3} xs={6}>
         <div class="countd">
                 <span id ="hours">{hour}</span>
                 HOURS
             </div>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col lg={3} md={3} sm={3} xs={6}>
         <div class="countd">
                 <span id ="minutes">{min}</span>
                 MINUTES
             </div>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col lg={3} md={3} sm={3} xs={6}>
         <div class="countd">
                 <span id ="seconds">{sec}</span>
                 SECONDS

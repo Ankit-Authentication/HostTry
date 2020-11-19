@@ -1,2 +1,12 @@
+.imagefaq{
+    height:30%;
+    display: block;
+    margin: auto;
+}
 
-
+@media (max-width: 900px) {
+   
+    .imagefaq{
+      height:25%;
+    }
+   } 
