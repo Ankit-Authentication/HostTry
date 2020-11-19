@@ -70,9 +70,9 @@ return(<Fragment>
   </Row> */}
 
   <Row>
-  <Col style={{ maxWidth: "40rem"  }}>
+  <Col lg= {6} md={6} sm = {12} >
     <br/>
-      <h1 style={{fontSize:"40px",color:"#f1c40f"}}>Chairman's Message </h1><br/>
+      <h1 style={{fontSize:"35px",color:"#f1c40f"}}>Chairman's Message </h1><br/>
         <Card style={{  backgroundColor:"transparent" }}>
           <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/chairman.jpg" />
           <Card.Body cascade className="text-left" >
@@ -90,45 +90,21 @@ Ganga Group of Institutions)</h3>
           </Card.Body>
         </Card>
       </Col>
-  {/* <Col style={{ maxWidth: "40rem"  }}>
-    <br/>
-      <h1 style={{fontSize:"40px",color:"#f1c40f"}}>Chairman's Message </h1><br/>
-        <Card style={{  backgroundColor:"transparent" }}>
-          <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/chairman.jpg" />
-          <Card.Body cascade className="text-left" >
-            
-            <Card.Text className ="info" sytle ={{color:"black"}} > <h3>"WEB-A-THON focuses on the National and International Industrial needs and also encourages students to work hard in this direction to provide technical solutions.We motivate students to excel in all spheres of Technical and Management education. We encourage   our students to provide real life solutions and to apply the knowledge acquired in a focused manner.
-
-I wish all a successful life ahead."</h3>
-        <h4 style={{textAlign:"center"}}>-Mr. Bharat Gupta<br/></h4>
-        <h3 style={{textAlign:"center"}}>(Chairman
-Ganga Group of Institutions)</h3>
-        </Card.Text>
-           
-          </Card.Body>
-        </Card>
-      </Col> */}
-
-      <Col style={{ maxWidth: "40rem"  }}><br/>
-      <h1 style={{fontSize:"40px",color:"#f1c40f"}}>Director's Message </h1><br/>
+ 
+      <Col lg= {6} md={6} sm = {12} ><br/>
+      <h1 style={{fontSize:"35px",color:"#f1c40f"}}>Director's Message </h1><br/>
         <Card style={{  backgroundColor:"transparent" }}>
           <Card.Img cascade style={{ height: '20rem' , maxWidth:"30rem" , margin:"auto"}} src="/images/dir.jpg" />
           <Card.Body cascade className="text-left" >
           <Card.Text  sytle ={{color:"black"}} > <p>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 
         I wish the WEB-A-THON great success. 
         I hope you have a good time and opportunity to connect with experts from the academic 
-        community."</p>
+        community.I wish all a successful life ahead."</p>
         <h4 style={{textAlign:"right"}}>-Prof.(Dr.) Aman Aggarwal<br/></h4>
         <h3 style={{textAlign:"right"}}>(Director , Ganga Institute Of Technology And Management)</h3>
         </Card.Text>
 
-            {/* <Card.Text  sytle ={{color:"black"}} > <h3>"I am confident that the participants will find WEB-A-Thon 2020 a very valuable experience. 
-        I wish the WEB-A-THON great success. 
-        I hope you have a good time and opportunity to connect with experts from the scientific 
-        community and influential entrepreneurs from industries."</h3>
-        <h4 style={{textAlign:"center"}}>- Dr. Aman Aggarwal<br/></h4>
-        <h3 style={{textAlign:"center"}}>(GANGA INSTITUTE OF TECHNOLOGY AND MANAGEMENT)</h3>
-        </Card.Text> */}
+           
            
           </Card.Body>
         </Card>
@@ -154,7 +130,7 @@ Ganga Group of Institutions)</h3>
 </Card></Col>
     <Col xl={6} md={6} sm={12} onClick={click}>
    <Card style={{ width: '100%' ,backgroundColor:"transparent"}}>
-  <Card.Img variant="top" src="/images/gitam-logo.png" style={{width:"35%",margin:"auto"}}/>
+  <Card.Img variant="top" src="/images/gitam-logo.png" style={{width:"40%",margin:"auto"}}/>
   <Card.Body>
     <Card.Title>GANGA INSTITUTE OF  TECHNOLOGY AND MANAGEMENT</Card.Title>
     <Card.Text>
