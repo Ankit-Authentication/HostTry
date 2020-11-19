@@ -44,7 +44,7 @@ return(<Fragment>
     <Col lg={3} md={3} sm={12}><img src="/images/image2.png" className="image" data-aos="fade-down"></img></Col>
   </Row>
   <section class="section">
-  <h1 className="data" style={{fontSize:"60px" }}>WEB-A-THON??</h1>
+  <h1 className="data " >WEB-A-THON??</h1>
 <p className="p">In this hackathon, we try to use web to hack into real world problem to solve them better. It's a 24–72 hours product making competition where every team needs to develop a product from scratch during those pretty hours. A team size can vary from 2–6 depending on the organization who is organizing it. </p>
 <p className="p"> This WEB-A-THON is usually a coding competition that can last upto 48 hours where software programmers, developers, designers, etc. come together to build and design something innovative and productive.</p>
  

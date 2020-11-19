@@ -121,6 +121,17 @@
       height:45%;
 margin-top: 50px;
     }
+    .web{
+      font-family: "ui-rounded";
+      font-size: 38px;
+      font-weight: 600;
+    }
+    .info h4 , h3 {
+      font-size: 15px;
+      line-height: 1.5rem;
+      text-align: center;
+      
+    }
    } 
 
    #logoheading{
