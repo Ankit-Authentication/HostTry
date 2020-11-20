@@ -236,10 +236,10 @@ const handleteam=(e)=>{
             <Form.Label>COURSE</Form.Label>
             <Form.Control as="select" placeholder="Enter course " name="course" requited >  
               <option >COURSE</option>
-              <option value="B.TECH">B.TECH</option>
+              <option value="B.TECH/B.E">B.TECH/B.E</option>
               <option value="BCA">BCA</option>
-              <option value="B.E.">B.E.</option>
-              <option value="B.Sc.">B.Sc.</option>
+              <option value="M.TECH">M.TECH</option>
+              <option value="MCA">MCA</option>
             </Form.Control>
            </Form.Group>
              
