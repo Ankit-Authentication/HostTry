@@ -13,7 +13,6 @@ const Schedule=()=>{
       className="vertical-timeline-element--work"
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-      iconStyle={{ background: 'white', color: 'rgb(33 , 150 ,243)' }}
      icon={<Image image="images/inn.png" style={{border:'5px solid white'}}/>}
     >
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h1>
@@ -25,7 +24,7 @@ const Schedule=()=>{
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      iconStyle={{  color: '#fff' }}
       icon={<Image image="images/idea.jpg"/>}
     >
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h1>
@@ -36,7 +35,7 @@ const Schedule=()=>{
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      iconStyle={{ background: 'white', color: '#fff' }}
+      iconStyle={{ color: '#fff' }}
       icon={<Image image="images/e1.jpg"/>}
     >
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>18-12-2020</h1>
@@ -53,7 +52,7 @@ const Schedule=()=>{
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      iconStyle={{  color: '#fff' }}
       icon={<Image image="images/semi.jpeg" style={{border:'5px solid white'}}/>}
     >
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>19-12-2020</h1>
@@ -68,7 +67,7 @@ const Schedule=()=>{
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
-      iconStyle={{ background: 'white', color: '#fff' }}
+      iconStyle={{  color: '#fff' }}
       contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       icon={<Image image="images/grand1.jpg" style={{border:'5px solid white'}}/>}
     >
@@ -79,8 +78,8 @@ const Schedule=()=>{
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
       
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      icon={<Image image="images/trophy.png" style={{border:'5px solid white'}}/>}
+      iconStyle={{  color: '#fff' }}
+      icon={<Image image="images/trophy.png" style={{background: 'rgb(33, 150, 243)',border:'5px solid white'}}/>}
     >
       <h1 className="vertical-timeline-element-title" style = {{textAlign:'left'}}>20-12-2020</h1>
       <h4 className="vertical-timeline-element-subtitle">11:00 AM Onwards</h4>
