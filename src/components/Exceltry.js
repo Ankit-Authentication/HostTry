@@ -14,6 +14,7 @@ const ProblemStatements=()=>{
   // const [value,setValue]=useState("all")
       
       useEffect(()=>{
+          window.scrollTo(0, 0)
 console.log("callres")
 csv(dataex).then(data=>{
   // console.log(probl)

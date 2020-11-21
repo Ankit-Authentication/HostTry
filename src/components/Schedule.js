@@ -1,10 +1,12 @@
-import React ,{useEffect , useState, Fragment}from "react";
+import React ,{useEffect }from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Image from "./Image"
 import './schedule.css'
 const Schedule=()=>{
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
  return(
     <VerticalTimeline style ={{textAlign:"left"}}>
     <VerticalTimelineElement

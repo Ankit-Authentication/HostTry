@@ -1,10 +1,12 @@
 
-import React ,{ useState}from "react";
+import React ,{ useState,useEffect}from "react";
 import { Container,Row,Col } from "react-bootstrap";
 import "./team.css"
 const Team=()=>{
 
-    <h1>TEAMS CARDS  </h1>
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
     const info=[
         {
             

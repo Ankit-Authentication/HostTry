@@ -1,6 +1,9 @@
-import React ,{Fragment} from "react";
+import React ,{Fragment,useEffect} from "react";
 import { Container,Row,Col, Card} from "react-bootstrap";
 const ErrorPage=()=>{
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 return(
     
         <Container>

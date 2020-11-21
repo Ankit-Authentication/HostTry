@@ -1,4 +1,4 @@
-import React ,{Fragment,useState} from "react";
+import React ,{Fragment,useState,useEffect} from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios"
 import Counter from "./Counter";
@@ -11,6 +11,9 @@ const [teamMember,setTeamMember]=useState()
 const [apiMessage,setApiMessage]=useState("")
 const [problem,setproblem]=useState()
 const team=[]
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
 const submitTeam=()=>{
   console.log(teamMember)
   setdisable(true)

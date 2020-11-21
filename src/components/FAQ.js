@@ -10,6 +10,7 @@ const Faqs=()=>{
           duration : 2000
         });
         AOS.refresh();
+          window.scrollTo(0, 0)
       }, []);
       
       const data = {
